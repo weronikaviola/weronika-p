@@ -1,0 +1,73 @@
+$black: black;
+$black-opaque: rgba(0,0,0,0.8);
+$red: red;
+$white: #EFDECD;
+
+$font-size-nav: calc(20px + 6 * ((100vw - 320px) / 680));
+$font-size-base: calc(10px + 6 * ((100vw - 320px) / 680));
+
+* {
+  box-sizing: border-box;
+  background: $black-opaque;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 1px solid $black;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  background: rgba(0,0,0,0.8);
+  color: $white;
+  height: 100%;
+
+  .menu-item {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 20vw;
+    font-size: $font-size-nav;
+    cursor: pointer;
+    color: $white;
+    font-family: 'Fira Code', monospace;
+    .alt-name {
+      display: none;
+    }
+
+    &.active {
+      color: $red;
+    }
+
+    &:hover {
+      transition: font-size 1s;
+      font-size: $font-size-base;
+      .name {
+        display: none;
+      }
+      .alt-name {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+
+
+.base-screen {
+  height: 90vh;
+}
+
+.main-screen {
+  background-image: url("/images/violabin.jpg");
+  background-size: cover;
+}
