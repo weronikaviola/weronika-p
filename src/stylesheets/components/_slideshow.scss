@@ -1,0 +1,16 @@
+.slideshow {
+  padding: 10px;
+  .slideshow__image {
+    max-width: 90%;
+    max-height: 90%;
+    transition: 1s filter linear;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .slideshow {
+    .slideshow__image {
+      max-width: 100%;
+    }
+  }
+}

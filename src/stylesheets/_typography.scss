@@ -1,0 +1,36 @@
+.bullet-point {
+  padding: 20px;
+}
+.caption {
+  font-family: 'PT Serif Caption', serif;
+}
+.center-span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.code {
+  font-family: 'Fira Code', monospace;
+}
+.pointer {
+  cursor: pointer;
+}
+.align-right {
+  text-align: right;
+}
+.text {
+  font-family: 'PT Serif', serif;
+  font-size: $font-size-base;
+  color: $white;
+}
+.title {
+  font-size: 50px;
+}
+.subtitle {
+  font-size: 40px;
+}
+.quote {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: $font-size-base;
+}

@@ -1,0 +1,73 @@
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  &:focus {
+    top: 0;
+  }
+}
+
+.auto-margin {
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  background: transparent;
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@for $i from 1 through 20 {
+  .padder-#{$i} {
+    padding: #{$base-padder * $i};
+  }
+  .padder-left-#{$i} {
+    padding-left: #{$base-padder * $i};
+  }
+  .spacer-#{$i} {
+    margin: #{$base-padder * $i};
+  }
+  .spacer-left-#{$i} {
+    margin-left:  #{$base-padder * $i};
+  }
+  .spacer-right-#{$i} {
+    margin-right: #{$base-padder * $i};
+  }
+  .spacer-top-#{$i} {
+    margin-top: #{$base-padder * $i};
+  }
+}
+
+@for $i from 20 through 100 {
+  .height-#{$i} {
+    height: #{$i}vh;
+  }
+  .width-#{$i} {
+    width: #{$i}vw;
+  }
+}
+@for $i from 1 through 10 {
+  .indent-#{$i} {
+    margin-left: #{$base-padder * ($i+4)};
+    text-indent: #{-($base-padder * ($i - 4))};
+  }
+}

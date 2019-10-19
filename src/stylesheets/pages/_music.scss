@@ -1,0 +1,66 @@
+.music-screen {
+  background: transparent;
+  .music-description__container {
+    height: 50vh;
+    overflow: auto;
+    .music-description {
+      background: transparent;
+      width: 60vw;
+      padding: 50px;
+    }
+    .slideshow-container {
+      padding: 50px;
+      padding-left: 0;
+      width: 40vw;
+      position: relative;
+    }
+  }
+  .music-parallax {
+    background-image: url("/images/violin-main_web.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 1s filter ease-in-out;
+  }
+}
+
+.wooden-floor {
+  background-image: url("/images/wooden-floor.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media only screen and (max-width: 812px) {
+  .music-screen {
+    flex-direction: column;
+    padding: 0;
+    .music-parallax {
+      background-position: left;
+    }
+    .music-description__container {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .music-description {
+        margin: 0 auto;
+        padding: 10%;
+        width: 100%;
+        font-size: $font-size-base-mobile;
+      }
+      .slideshow-container {
+        padding: 0;
+        margin: 0;
+        width: 90vw;
+      }
+    }
+  }
+  .music-carousel {
+    display: none;
+  }
+}

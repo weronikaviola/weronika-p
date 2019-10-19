@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "quotes": ["error", "double"],
+    "camelcase": "off",
+    "import/named": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-await-in-loop": "off",
+    "jsx-fragments": "off",
+    "arrow-parens": "off",
+    "react/no-array-index-key": "off",
+    "jsx-a11y/label-has-for": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/label-has-associated-control": ["error", {
+      "labelComponents": [],
+      "labelAttributes": [],
+      "controlComponents": ["Select", "StateSelect", "TextInput", "MonthYearInput", "YearOrMonthYearInput"],
+      "assert": "either",
+      "depth": 25
+    }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+    "jquery": true
+  }
+}

@@ -1,0 +1,38 @@
+
+.btn {
+  //.btn--text
+  &--text{
+    border: 0;
+    outline: 0;
+    background: none;
+    font-size: $font-size-base;
+    cursor: pointer;
+  }
+
+  //.btn--link
+  &--link {
+    border: 0;
+    outline: 0;
+    background: none;
+    cursor: pointer;
+    color: $blue;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  //.btn--repo
+  &--repo {
+    border: 1px;
+    background: rgba(255,255,255,0.7);
+    font-size: $font-size-base;
+    cursor: pointer;
+    padding: 10px 30px;
+    position: fixed;
+    right: 0;
+    top: 10vh;
+    &:hover {
+      background: rgba(255,255,255,0.9);
+    }
+  }
+}

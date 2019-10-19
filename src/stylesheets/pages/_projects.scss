@@ -1,0 +1,22 @@
+
+.projects-screen {
+  background-image: url("/images/mars.jpg");
+  background-size: cover;
+  .projects-div {
+    margin: 5vh auto;
+    width: 80vw;
+    .next-project {
+      padding: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .projects-screen {
+    .projects-div {
+      margin: 0 auto;
+      width: 100vw;
+      padding: 0;
+    }
+  }
+}

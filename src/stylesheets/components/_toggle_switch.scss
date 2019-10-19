@@ -1,0 +1,62 @@
+// from w3schools.com
+.toggleSwitch {
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  &:focus-within {
+    outline: -webkit-focus-ring-color auto 1px
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(204, 204, 204, 0.7), rgba(204, 204, 204, 0.4));
+    transition: .4s;
+    border-radius: 5px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: linear-gradient(rgba(250, 250, 250, 0.9), rgba(255, 255, 255, 0.9));
+    transition: .4s;
+  }
+
+  .on + .slider {
+    background: linear-gradient(rgba(194, 26, 166, 0.8), rgba(194, 26, 166, 0.6));
+  }
+
+  .on + .slider:before {
+    transform: translateX(26px);
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .toggleSwitch {
+    display: none;
+  }
+}

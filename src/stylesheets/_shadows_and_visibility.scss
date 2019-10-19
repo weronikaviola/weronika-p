@@ -1,0 +1,32 @@
+.blur {
+  filter: blur(1.5px);
+  transition: 1s filter linear;
+}
+.bcg-white {
+  background-color: $white;
+}
+.bcg-semi-black {
+  background-color: rgba(0,0,0,0.5);
+}
+.opaque-black {
+  color: $black-opaque;
+}
+.standard-shadow {
+  box-shadow: 10px 30px 50px $black;
+}
+.text-shadow__underline {
+  text-shadow: 0 15px 10px $black;
+}
+.text-shadow__classic-black {
+  text-shadow: 0 5px 5px $black;
+}
+.text-shadow__discrete {
+  text-shadow: 0 5px 15px $black;
+}
+.visibility-hidden {
+  visibility: hidden;
+  transition: all ease-in-out 0.5s;
+}
+.bcg-transparent {
+  background: transparent;
+}

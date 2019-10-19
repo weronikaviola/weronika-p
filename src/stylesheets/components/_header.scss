@@ -1,0 +1,92 @@
+.header {
+  height: 10vh;
+}
+
+.mobile-nav-menu {
+  display: none;
+  position: relative;
+  .hamburger-icon {
+    height: 10vh;
+    width: 10vh;
+    color: $white;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  background: rgba(0,0,0,0.8);
+  color: $white;
+  height: 100%;
+  z-index: 10;
+
+  .menu-item {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 20vw;
+    font-size: $font-size-nav;
+    cursor: pointer;
+    color: $white;
+    font-family: 'Fira Code', monospace;
+    .alt-name {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 813px) {
+  .menu-item {
+    &:hover, &.bin-mode {
+      transition: font-size 1s;
+      font-size: $font-size-base;
+      background: transparent;
+      z-index: 1000;
+      .name {
+        display: none;
+      }
+      .alt-name {
+        display: block;
+        background: transparent;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .nav-menu {
+    display: block;
+    background: $white-semi-opaque;
+    padding-top: 0;
+    margin-top: 0;
+    position: absolute;
+    left: -1000px;
+    width: 90vw;
+    visibility: hidden;
+    height: auto;
+    &.visible {
+      visibility: visible;
+      left: 0px;
+      transition: all 0.5s;
+    }
+    .menu-item {
+      z-index: 100;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: $font-size-nav-mobile;
+      text-shadow: 0 2px 5px $black;
+      border-bottom: 1px solid $black;
+      .name {
+        color: black;
+      }
+      &:active {
+        background-color: $white;
+      }
+    }
+  }
+  .mobile-nav-menu {
+    display: block;
+  }
+}

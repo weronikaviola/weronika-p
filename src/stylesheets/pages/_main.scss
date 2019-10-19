@@ -1,0 +1,14 @@
+.main-screen {
+  background-image: url("/images/violabin.jpg");
+  background-size: cover;
+  .main {
+    color: $white;
+    padding: 10%;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .main-screen {
+    background-position: 100% 0%;
+  }
+}

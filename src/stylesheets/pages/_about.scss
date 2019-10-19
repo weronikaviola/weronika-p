@@ -1,0 +1,49 @@
+.about-page-container {
+  background: url("/images/sky_small-web.jpg");
+  background-size: auto 100%;
+  transition: background-position 1s ease;
+  .about-page {
+    height: 100%;
+    .about-main {
+      background: rgba(0, 0, 0, 0.6);
+      color: $white;
+      overflow: auto;
+    }
+    .about-aside {
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .skill-item {
+        background: rgba(200, 200, 200, 0.8);
+        background: linear-gradient(90deg, rgba(233,206,180,0.8) 0%, rgba(239,222,205,0.8) 25%, rgba(172,145,118,0.8) 100%);
+        padding: 10px;
+        border-radius: 5px;
+        &:hover {
+          background: rgba(200, 200, 200, 1);
+          background: linear-gradient(90deg, rgba(233,206,180,1) 0%, rgba(239,222,205,1) 79%, rgba(172,145,118,1) 100%);
+        }
+      }
+    }
+  }
+}
+.experience-item {
+  .experience-item__header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-aside {
+    display: none;
+  }
+  .about-main {
+    width: 100vw !important;
+  }
+  .experience-item {
+    .experience-item__header {
+      flex-direction: column;
+    }
+  }
+}

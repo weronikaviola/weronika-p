@@ -1,0 +1,21 @@
+@import "./stylesheets/variables";
+@import "./stylesheets/typography";
+@import "./stylesheets/positioning";
+@import "./stylesheets/icons";
+@import "./stylesheets/shadows_and_visibility";
+@import "./stylesheets/animations";
+@import "./stylesheets//buttons";
+
+@import "./stylesheets/components/header";
+@import "./stylesheets/components/carousel";
+@import "./stylesheets/components/base_card";
+@import "./stylesheets/components/base_screen";
+@import "./stylesheets/components/slideshow";
+@import "./stylesheets/components/json";
+@import "./stylesheets/components/toggle_switch";
+
+@import "./stylesheets/pages/music";
+@import "./stylesheets/pages/projects";
+@import "./stylesheets/pages/about";
+@import "./stylesheets/pages/main";
+@import "./stylesheets/pages/error";
