@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 const BaseScreen = (props) => {
   const { children, classNames } = props;
 
