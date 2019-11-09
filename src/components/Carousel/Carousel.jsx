@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import FontAwesome from "react-fontawesome"
 
@@ -11,7 +12,7 @@ const Carousel = (props) => {
   } = props;
   const itemsLength = items.length;
   const generateClassName = (idx) => {
-    let baseClass = "carousel__item";
+    let baseClass = "carousel__item standard-shadow";
     let left = active - 1 < 0 ? itemsLength-1 : active-1;
     let right = (active+1)%itemsLength;
     if (idx === active) baseClass += " active";
@@ -31,35 +32,53 @@ const Carousel = (props) => {
   };
   return (
     <div className={`height-${height} carousel padder-10`}>
-      <div className="carousel__title">{title}</div>
+      <div className="carousel__title caption text-shadow__underline">{title}</div>
       <div className="carousel__videos">
         <FontAwesome
           name="chevron-left"
           size="3x"
-          className="spacer-right-5 pointer"
+          className="spacer-right-5 pointer text-shadow__discrete"
           onClick={moveLeft}
         />
         <div className="carousel__items">
           {items.map((item, idx) => (
-            <div
+            <a
               className={generateClassName(idx)}
-              style={{
-                backgroundImage: `url(${item.image})`,
-              }}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {item.title}
-            </div>
+              <div
+                style={{
+                  backgroundImage: `url(${item.image})`,
+                }}
+                className="flex flex-center"
+              >
+                <FontAwesome name="play-circle" size="3x" className="text-shadow__discrete" />
+              </div>
+            </a>
           ))}
         </div>
         <FontAwesome
           name="chevron-right"
           size="3x"
-          className="spacer-left-5 pointer"
+          className="spacer-left-5 pointer text-shadow__discrete"
           onClick={moveRight}
         />
       </div>
     </div>
   )
+};
+
+Carousel.propTypes = {
+  title: PropTypes.string,
+  height: PropTypes.string,
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+Carousel.defaultProps = {
+  title: "",
+  height: "50",
 };
 
 export default Carousel;

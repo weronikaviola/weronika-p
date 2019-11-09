@@ -7,7 +7,6 @@ const Main = (props) => {
       <BaseScreen
         classNames="main-screen"
       >
-        main screen
       </BaseScreen>
   )
 };

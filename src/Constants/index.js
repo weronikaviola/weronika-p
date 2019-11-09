@@ -1,5 +1,5 @@
 export const MUSIC_DESCRIPTION =
-  "I am a Polish violist, violinist, and composer, born in Poland and living in Los Angeles, CA. \
+  "I am also a violist, violinist, and composer. \
   As a member of various classical orchestras and ensembles I performed around the globe, \
   including famous venues like Usher Hall in Edinburgh, Musikverein Golden Hall in Vienna, Keimyung University in South Korea, \
   and many more. I performed during the Warsaw Autumn contemporary music festival, \
@@ -36,3 +36,56 @@ export const MUSIC_CAROUSEL_ITEMS = [
     link: "https://www.facebook.com/watch/?v=640599346015265",
   }
 ];
+
+export const GRAPH_DATA = {
+  nodes: [
+    {id: "Silversheet", name: "Silversheet", symbolType: "square", size: 6000, svg: "https://i.imgur.com/djlKYup.png"},
+    {id: "One++", name: "One++", symbolType: "circle", size: 500, svg: ""},
+    {
+      id: "Leaflet",
+      name: "Leaflet",
+      symbolType: "circle",
+      size: "1000",
+      svg: "",
+    },
+    {
+      id: "Izac-Man",
+      name: "IzaC-Man",
+      symbolType: "circle",
+      size: "500",
+      svg: "",
+    },
+    {
+      id: "Text-to-binary",
+      name: "Binary Translator",
+      symbolType: "triangle",
+      size: "500",
+      svg: "",
+    },
+    {
+      id: "Flashcards",
+      name: "Flashcards",
+      symbolType: "triangle",
+      size: "500",
+      svg: "",
+    },
+    {
+      id: "HouseMates",
+      name: "HouseMates",
+      symbolType: "triangle",
+      size: "500",
+      svg: "",
+    },
+    {
+      id: "Checkers",
+      name: "Checkers",
+      symbolType: "triangle",
+      size: "500",
+      svg: "",
+    },
+  ],
+  links: [
+    // {source: "One++", target: "Silversheet"},
+
+  ]
+}
