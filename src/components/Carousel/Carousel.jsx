@@ -47,6 +47,7 @@ const Carousel = (props) => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
+              key={item.link.slice(item.link.length - 10)}
             >
               <div
                 style={{

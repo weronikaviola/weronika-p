@@ -16,31 +16,16 @@ import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import Carousel from "../../components/Carousel/Carousel";
 
 const Music = (props) => {
-  const [imageBlurred, changeImageBlurred] = useState(false);
-
-  const handleScroll = (evt) => {
-    const position = window.scrollY;
-
-    if (position > 100) {
-      changeImageBlurred(true);
-    } else if (position < 100) {
-      changeImageBlurred(false);
-    }
-  }
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  })
-
   const moveDown = () => {
-    document.getElementById("screen-2").scrollIntoView({ block: "start", behavior: "smooth" })
+    document.getElementById("screen-2").scrollIntoView({ behavior: "smooth" })
   }
   return (
     <Fragment>
-      <BaseScreen classNames="music-screen">
-        <div className={`music-parallax ${imageBlurred ? "blur" : ""}`}>
+      <BaseScreen classNames="music-screen" id="screen-1">
+        <div className={`music-parallax`}>
           <FontAwesome
             name="chevron-down"
-            size="10x"
+            size="5x"
             className="opaque-black text-shadow__discrete wobble-on-hover pointer"
             onClick={moveDown}
           />
@@ -60,10 +45,8 @@ const Music = (props) => {
               title="soundcloud-player"
               width="100%"
               height="300"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/525172536&color=%233c3a39&auto_play=false&hide_related=false&show_user=true&show_reposts=false"
+              frameBorder="no"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/525172536&color=%233c3a39&auto_play=false&hide_related=false&show_user=false&show_reposts=false"
             />
           </div>
         </div>

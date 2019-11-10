@@ -37,55 +37,35 @@ export const MUSIC_CAROUSEL_ITEMS = [
   }
 ];
 
-export const GRAPH_DATA = {
-  nodes: [
-    {id: "Silversheet", name: "Silversheet", symbolType: "square", size: 6000, svg: "https://i.imgur.com/djlKYup.png"},
-    {id: "One++", name: "One++", symbolType: "circle", size: 500, svg: ""},
-    {
-      id: "Leaflet",
-      name: "Leaflet",
-      symbolType: "circle",
-      size: "1000",
-      svg: "",
-    },
-    {
-      id: "Izac-Man",
-      name: "IzaC-Man",
-      symbolType: "circle",
-      size: "500",
-      svg: "",
-    },
-    {
-      id: "Text-to-binary",
-      name: "Binary Translator",
-      symbolType: "triangle",
-      size: "500",
-      svg: "",
-    },
-    {
-      id: "Flashcards",
-      name: "Flashcards",
-      symbolType: "triangle",
-      size: "500",
-      svg: "",
-    },
-    {
-      id: "HouseMates",
-      name: "HouseMates",
-      symbolType: "triangle",
-      size: "500",
-      svg: "",
-    },
-    {
-      id: "Checkers",
-      name: "Checkers",
-      symbolType: "triangle",
-      size: "500",
-      svg: "",
-    },
-  ],
-  links: [
-    // {source: "One++", target: "Silversheet"},
-
-  ]
-}
+export const PROJECTS = [
+  {
+    name: "Silversheet",
+    title: "jr. Software Engineer",
+    description: [
+      "first line",
+      "second line",
+      "third line"
+    ],
+    image: "https://i.imgur.com/tc3cpVo.png",
+  },
+  {
+    name: "npm create-redux-component",
+    title: "Author",
+    description: [
+      "first line",
+      "second line",
+      "third line"
+    ],
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1280px-Npm-logo.svg.png",
+  },
+  {
+    name: "Silversheet",
+    title: "jr. Software Engineer",
+    description: [
+      "first line",
+      "second line",
+      "third line"
+    ],
+    image: "https://i.imgur.com/tc3cpVo.png",
+  },
+];

@@ -15,7 +15,7 @@ const BaseScreen = (props) => {
 };
 
 BaseScreen.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.element), PropTypes.element]).isRequired,
   classNames: PropTypes.string,
   height: PropTypes.string,
 };

@@ -1,15 +1,37 @@
 import React from "react";
 import PropTypes from "prop-types";
+import FontAwesome from "react-fontawesome";
 
 const Card = (props) => {
   const {
+    name,
+    title,
+    description,
+    image,
     className,
-    children
   } = props;
 
   return (
-    <div className={`base-card ${className}`}>
-      {children}
+    <div className="base-card-wrapper">
+      <div className={`base-card standard-shadow ${className}`}>
+        <div className="card-top">
+          {name}&nbsp;-&nbsp;
+          {title}
+          <img
+            src={image}
+            className="card-image"
+            alt={`${name}-logo`}
+          />
+        </div>
+        <div className="card-bottom">
+          {description.map(item => (
+            <div className="description-item" key={item.slice(0,10)}>
+              <FontAwesome name="music" className="bullet-point" />
+              {item}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
@@ -17,5 +39,9 @@ const Card = (props) => {
 export default Card;
 
 Card.propTypes = {
-  children: PropTypes.element.isRequired,
+  className: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

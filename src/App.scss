@@ -12,20 +12,22 @@ $black: rgba(0,0,0,0.95);
 $black-opaque: rgba(0,0,0,0.8);
 $red: red;
 $white: #efdecd;
+$white-blue: #E3F0FC;
 $gray: rgb(100,100, 100);
 
 $base-padder: 5px;
 
 $font-size-nav: calc(20px + 6 * ((100vw - 320px) / 680));
 $font-size-base: calc(10px + 6 * ((100vw - 320px) / 680));
+$font-size-card: calc(25px + 6 * ((100vw - 320px) / 680));
 
 * {
   box-sizing: border-box;
-  background: $black;
-}
-body {
 }
 
+body {
+  background: $black;
+}
 // BEM
 a {
   text-decoration: none;
@@ -33,6 +35,9 @@ a {
 }
 .fa {
   background: transparent;
+}
+.bullet-point {
+  padding: 20px;
 }
 .text {
   font-family: 'PT Serif', serif;
@@ -45,12 +50,20 @@ a {
 .caption {
   font-family: 'PT Serif Caption', serif;
 }
+.center-span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 .flex {
   display: flex;
   background: transparent;
   &.flex-wrap {
     flex-wrap: wrap;
   }
+}
+.flex-column {
+  flex-direction: column;
 }
 .flex-center {
   align-items: center;
@@ -77,6 +90,10 @@ a {
 }
 .opaque-black {
   color: $black-opaque;
+}
+.visibility-hidden {
+  visibility: hidden;
+  transition: all ease-in-out 0.5s;
 }
 .wobble-on-hover:hover {
   -webkit-animation-duration: 1s;
@@ -112,13 +129,6 @@ a {
   text-justify: inter-word;
 }
 
-.wooden-floor {
-  background-image: url("/images/wooden-floor.jpg");
-  background-size: cover;
-  background-position: bottom;
-}
-
-
 // specific
 .header {
   height: 10vh;
@@ -130,6 +140,7 @@ a {
   background: rgba(0,0,0,0.8);
   color: $white;
   height: 100%;
+  z-index: 10;
 
   .menu-item {
     background: transparent;
@@ -225,18 +236,42 @@ a {
   }
 }
 
-.base-screen {
-  // height: 90vh;
-}
-.base-card {
-  width: 80%;
-  height: 50vh;
-  background: $white;
-  border: 1px solid $black;
-  margin: 0 auto;
-  display: none;
-  &.visible {
-    display: block;
+.base-card-wrapper {
+  position: relative;
+  .base-card {
+    width: 80vw;
+    height: 50vh;
+    background: $white-blue;
+    background-image: url("/images/rules.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: $font-size-card;
+    position: absolute;
+    top: -9999px !important;
+    visibility: hidden;
+    &.visible {
+      visibility: visible;
+      top: 0 !important;
+      transition: top 0.5s;
+    }
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+    .card-bottom {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+    }
+    .card-image {
+      max-width: 50%;
+      max-height: 10vh;
+    }
   }
 }
 
@@ -269,6 +304,12 @@ a {
   }
 }
 
+.wooden-floor {
+  background-image: url("/images/wooden-floor.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
 .skills-container {
   color: $white;
   width: 80vw;
@@ -286,20 +327,11 @@ a {
 .projects-screen {
   background-image: url("/images/mars.jpg");
   background-size: cover;
-  position: relative;
-  padding: 10% 0;
-}
-.graph-container {
-  background: transparent;
-  width: 80%;
-  margin: 0 auto;
-}
-#projects-graph-graph-wrapper {
-  background: transparent;
-  svg {
-    background: transparent;
+  .projects-div {
+    margin: 0 auto;
+    width: 80vw;
+    .next-project {
+      padding: 20px;
+    }
   }
-}
-[name~=svg-container-projects-graph] {
-  background: transparent;
 }
