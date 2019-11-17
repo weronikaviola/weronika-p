@@ -69,3 +69,9 @@ export const PROJECTS = [
     image: "https://i.imgur.com/tc3cpVo.png",
   },
 ];
+
+export const SKILLS = [
+  "JavaScript",
+  "React",
+  "Ruby",
+];
