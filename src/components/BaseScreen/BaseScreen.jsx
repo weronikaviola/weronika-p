@@ -1,28 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const BaseScreen = (props) => {
-  const { children, classNames, height, id } = props;
-
-  return (
-    <div
-      className={`base-screen ${classNames} height-${height}`}
-      id={id}
-    >
-      {children}
-    </div>
-  );
-};
+const BaseScreen = ({
+  children,
+  classNames,
+  height,
+  id,
+}) => (
+  <div
+    className={`base-screen ${classNames} height-${height}`}
+    id={id}
+  >
+    {children}
+  </div>
+);
 
 BaseScreen.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.element), PropTypes.element]).isRequired,
+  children: PropTypes.oneOfType(
+    [PropTypes.arrayOf(PropTypes.element), PropTypes.element],
+  ).isRequired,
   classNames: PropTypes.string,
   height: PropTypes.string,
+  id: PropTypes.string,
 };
 
 BaseScreen.defaultProps = {
   classNames: "",
-  height: "90"
+  height: "90",
+  id: "",
 };
 
 export default BaseScreen;

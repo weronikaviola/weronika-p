@@ -289,6 +289,17 @@ a {
   background-size: cover;
 }
 
+.error-screen {
+  background-image: url("/images/error-cat.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  color: white;
+  .not-found {
+    padding: 20%;
+    font-size: 40px;
+  }
+}
+
 .music-screen {
   background: transparent;
   .iframe-container {

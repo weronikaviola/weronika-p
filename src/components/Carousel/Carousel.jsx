@@ -1,35 +1,35 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import FontAwesome from "react-fontawesome"
+import FontAwesome from "react-fontawesome";
 
-const Carousel = (props) => {
+const Carousel = ({
+  items,
+  height,
+  title,
+}) => {
   const [active, setActive] = useState(1);
-  const {
-    title,
-    height,
-    items,
-  } = props;
   const itemsLength = items.length;
   const generateClassName = (idx) => {
     let baseClass = "carousel__item standard-shadow";
-    let left = active - 1 < 0 ? itemsLength-1 : active-1;
-    let right = (active+1)%itemsLength;
+    const left = active - 1 < 0 ? itemsLength - 1 : active - 1;
+    const right = (active + 1) % itemsLength;
     if (idx === active) baseClass += " active";
     else if ([left, right].includes(idx)) baseClass += " small";
     else baseClass += " hidden";
     return baseClass;
-  }
+  };
 
   const moveLeft = () => {
-    let newActive = active - 1 < 0 ? itemsLength-1 : active - 1;
-    setActive(newActive)
+    const newActive = active - 1 < 0 ? itemsLength - 1 : active - 1;
+    setActive(newActive);
   };
 
   const moveRight = () => {
-    let newActive = (active+1)%itemsLength;
+    const newActive = (active + 1) % itemsLength;
     setActive(newActive);
   };
+
   return (
     <div className={`height-${height} carousel padder-10`}>
       <div className="carousel__title caption text-shadow__underline">{title}</div>
@@ -68,7 +68,7 @@ const Carousel = (props) => {
         />
       </div>
     </div>
-  )
+  );
 };
 
 Carousel.propTypes = {

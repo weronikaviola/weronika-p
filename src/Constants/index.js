@@ -1,5 +1,5 @@
-export const MUSIC_DESCRIPTION =
-  "I am also a violist, violinist, and composer. \
+/* eslint-disable no-multi-str */
+export const MUSIC_DESCRIPTION = "I am also a violist, violinist, and composer. \
   As a member of various classical orchestras and ensembles I performed around the globe, \
   including famous venues like Usher Hall in Edinburgh, Musikverein Golden Hall in Vienna, Keimyung University in South Korea, \
   and many more. I performed during the Warsaw Autumn contemporary music festival, \
@@ -34,7 +34,7 @@ export const MUSIC_CAROUSEL_ITEMS = [
     title: "WENA - Wzwyz",
     image: "https://i.imgur.com/HI7Yxla.png",
     link: "https://www.facebook.com/watch/?v=640599346015265",
-  }
+  },
 ];
 
 export const PROJECTS = [
@@ -44,7 +44,7 @@ export const PROJECTS = [
     description: [
       "first line",
       "second line",
-      "third line"
+      "third line",
     ],
     image: "https://i.imgur.com/tc3cpVo.png",
   },
@@ -54,7 +54,7 @@ export const PROJECTS = [
     description: [
       "first line",
       "second line",
-      "third line"
+      "third line",
     ],
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1280px-Npm-logo.svg.png",
   },
@@ -64,7 +64,7 @@ export const PROJECTS = [
     description: [
       "first line",
       "second line",
-      "third line"
+      "third line",
     ],
     image: "https://i.imgur.com/tc3cpVo.png",
   },
@@ -75,3 +75,5 @@ export const SKILLS = [
   "React",
   "Ruby",
 ];
+
+export const ABOUT_ME = "Hi! I'm Weronika. And this will be some kind of description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, illum? Dolorem tempore repudiandae id cupiditate voluptatibus totam unde error vitae exercitationem officia iste labore porro nostrum dicta qui, doloremque nam."

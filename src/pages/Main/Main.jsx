@@ -1,14 +1,10 @@
 import React from "react";
-
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
 
-const Main = (props) => {
-  return (
-      <BaseScreen
-        classNames="main-screen"
-      >
-      </BaseScreen>
-  )
-};
+const Main = () => (
+  <BaseScreen
+    classNames="main-screen"
+  />
+);
 
 export default Main;

@@ -1,28 +1,21 @@
-import React, {
-  Fragment,
-  useEffect,
-  useState,
-} from "react";
-
-
+import React from "react";
+import FontAwesome from "react-fontawesome";
 import {
   MUSIC_DESCRIPTION,
   MUSIC_CAROUSEL_ITEMS,
 } from "../../Constants";
-
-import FontAwesome from "react-fontawesome";
-
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import Carousel from "../../components/Carousel/Carousel";
 
-const Music = (props) => {
+const Music = () => {
   const moveDown = () => {
-    document.getElementById("screen-2").scrollIntoView({ behavior: "smooth" })
-  }
+    document.getElementById("screen-2").scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <Fragment>
+    <>
       <BaseScreen classNames="music-screen" id="screen-1">
-        <div className={`music-parallax`}>
+        <div className="music-parallax">
           <FontAwesome
             name="chevron-down"
             size="5x"
@@ -56,8 +49,8 @@ const Music = (props) => {
           items={MUSIC_CAROUSEL_ITEMS}
         />
       </BaseScreen>
-    </Fragment>
-  )
+    </>
+  );
 };
 
 export default Music;

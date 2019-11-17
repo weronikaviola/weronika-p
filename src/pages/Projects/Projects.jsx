@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import FontAwesome from "react-fontawesome";
 
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
@@ -6,7 +6,7 @@ import Card from "../../components/Card/Card";
 
 import { PROJECTS } from "../../Constants";
 
-const Projects = (props) => {
+const Projects = () => {
   const [visible, changeVisible] = useState(0);
   const PROJECTS_COUNT = PROJECTS.length - 1;
 
@@ -19,7 +19,7 @@ const Projects = (props) => {
   };
 
   return (
-    <Fragment>
+    <>
       <BaseScreen classNames="projects-screen">
         <div className="projects-div">
           <div className="flex">
@@ -48,8 +48,8 @@ const Projects = (props) => {
           ))}
         </div>
       </BaseScreen>
-    </Fragment>
-  )
+    </>
+  );
 };
 
 export default Projects;
