@@ -1,6 +1,6 @@
 {
-  "name": "weronika-p",
-  "version": "0.1.0",
+  "name": "weronika-portfolio",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "eslint": "^6.6.0",
@@ -21,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "FILES=`git diff --name-only --diff-filter=d origin/master... | grep '.*\\.jsx\\?$' | grep -v json`; if [ \"$FILES\" ]; then eslint $FILES; fi"
   },
   "browserslist": {
     "production": [
