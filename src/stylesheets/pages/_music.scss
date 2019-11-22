@@ -1,0 +1,29 @@
+.music-screen {
+  background: transparent;
+  .iframe-container {
+    width: 40vw;
+    margin: 0 auto;
+  }
+  .music-description {
+    background: transparent;
+    width: 60vw;
+  }
+  .music-parallax {
+    background-image: url("/images/weroviolin.jpg");
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 1s filter ease-in-out;
+  }
+}
+
+.wooden-floor {
+  background-image: url("/images/wooden-floor.jpg");
+  background-size: cover;
+  background-position: bottom;
+}

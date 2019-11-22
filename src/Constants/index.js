@@ -1,4 +1,6 @@
 /* eslint-disable no-multi-str */
+export * from "./about";
+
 export const MUSIC_DESCRIPTION = "I am also a violist, violinist, and composer. \
   As a member of various classical orchestras and ensembles I performed around the globe, \
   including famous venues like Usher Hall in Edinburgh, Musikverein Golden Hall in Vienna, Keimyung University in South Korea, \
@@ -69,11 +71,3 @@ export const PROJECTS = [
     image: "https://i.imgur.com/tc3cpVo.png",
   },
 ];
-
-export const SKILLS = [
-  "JavaScript",
-  "React",
-  "Ruby",
-];
-
-export const ABOUT_ME = "Hi! I'm Weronika. And this will be some kind of description. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, illum? Dolorem tempore repudiandae id cupiditate voluptatibus totam unde error vitae exercitationem officia iste labore porro nostrum dicta qui, doloremque nam."

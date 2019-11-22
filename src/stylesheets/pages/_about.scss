@@ -1,0 +1,16 @@
+.about-page {
+  background: url("/images/hubble-leo.jpeg");
+  .about-main {
+    background: rgba(0, 0, 0, 0.5);
+    color: $white;
+    .description {
+      .paragraph {
+        
+      }
+    }
+  }
+
+  .about-aside {
+    background: rgba(200, 200, 200, 0.2);
+  }
+}
