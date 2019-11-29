@@ -22,30 +22,7 @@ const Projects = () => {
     <>
       <BaseScreen classNames="projects-screen">
         <div className="projects-div">
-          <div className="flex">
-            <FontAwesome
-              name="chevron-up"
-              size="5x"
-              className={`next-project pointer center-span ${visible === 0 ? "visibility-hidden" : ""}`}
-              onClick={() => handleChevronClick("up")}
-            />
-            <FontAwesome
-              name="chevron-down"
-              size="5x"
-              className={`next-project pointer center-span ${visible === PROJECTS_COUNT ? "visibility-hidden" : ""}`}
-              onClick={() => handleChevronClick("down")}
-            />
-          </div>
-          {PROJECTS.map((project, idx) => (
-            <Card
-              name={project.name}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              className={idx === visible ? "visible" : ""}
-              key={`project-${project.name}-${idx}`}
-            />
-          ))}
+          
         </div>
       </BaseScreen>
     </>

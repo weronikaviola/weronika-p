@@ -3,6 +3,7 @@ import {
   DESCRIPTION,
   ADA_LOVELACE_QUOTE,
   SKILLS,
+  LOREM_IPSUM,
 } from "../../Constants";
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import SkillItem from "./SkillItem";
@@ -39,27 +40,12 @@ const About = () => {
                 {paragraph}
               </div>
             ))}
-            {DESCRIPTION.map((paragraph) => (
+            {LOREM_IPSUM.map((paragraph) => (
               <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
                 {paragraph}
               </div>
             ))}
-            {DESCRIPTION.map((paragraph) => (
-              <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
-                {paragraph}
-              </div>
-            ))}
-            {DESCRIPTION.map((paragraph) => (
-              <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
-                {paragraph}
-              </div>
-            ))}
-            {DESCRIPTION.map((paragraph) => (
-              <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
-                {paragraph}
-              </div>
-            ))}
-            {DESCRIPTION.map((paragraph) => (
+            {LOREM_IPSUM.map((paragraph) => (
               <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
                 {paragraph}
               </div>
