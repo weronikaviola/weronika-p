@@ -1,7 +1,8 @@
 .blur {
   filter: blur(5px);
   transition: 1s filter ease-in-out;
-}.bcg-white {
+}
+.bcg-white {
   background-color: $white;
 }
 .opaque-black {

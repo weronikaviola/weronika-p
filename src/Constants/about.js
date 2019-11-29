@@ -1,4 +1,4 @@
-export const ADA_LOVELACE_QUOTE = "Understand well as I may, my comprehension can only be an infinitesimal fraction of all I want to understand. - A.Lovelace";
+export const ADA_LOVELACE_QUOTE = ["Understand well as I may, my comprehension can only be an infinitesimal fraction of all I want to understand.", "Ada Lovelace"];
 
 export const DESCRIPTION = [
   "Hi! I’m Weronika.",
@@ -68,5 +68,5 @@ export const SKILLS = [
   {
     name: "visualstudio",
     logo: "devicon-visualstudio-plain colored",
-  }
+  },
 ];

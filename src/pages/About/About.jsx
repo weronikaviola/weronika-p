@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-
-import BaseScreen from "../../components/BaseScreen/BaseScreen";
-
 import {
   DESCRIPTION,
   ADA_LOVELACE_QUOTE,
   SKILLS,
 } from "../../Constants";
+import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import SkillItem from "./SkillItem";
+import Quote from "../../components/Quote";
 
 const About = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -34,9 +33,7 @@ const About = () => {
         </div>
         <div className="width-80 about-main padder-5" onScroll={onScroll}>
           <div className="description code text-shadow__discrete">
-            <div className="quote spacer-10">
-              {ADA_LOVELACE_QUOTE}
-            </div>
+            <Quote text={ADA_LOVELACE_QUOTE[0]} author={ADA_LOVELACE_QUOTE[1]} />
             {DESCRIPTION.map((paragraph) => (
               <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
                 {paragraph}

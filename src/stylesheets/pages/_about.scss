@@ -5,7 +5,7 @@
   .about-page {
     height: 100%;
     .about-main {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
       color: $white;
       overflow: auto;
       .description {
@@ -25,5 +25,14 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .about-aside {
+    display: none;
+  }
+  .about-main {
+    width: 100vw !important;
   }
 }
