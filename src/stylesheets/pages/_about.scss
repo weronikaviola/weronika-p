@@ -1,16 +1,29 @@
-.about-page {
-  background: url("/images/hubble-leo.jpeg");
-  .about-main {
-    background: rgba(0, 0, 0, 0.5);
-    color: $white;
-    .description {
-      .paragraph {
-        
+.about-page-container {
+  background: url("/images/sky_full-size.jpeg");
+  background-size: auto 100%;
+  transition: background-position 1s ease;
+  .about-page {
+    height: 100%;
+    .about-main {
+      background: rgba(0, 0, 0, 0.5);
+      color: $white;
+      overflow: auto;
+      .description {
+        .paragraph {
+          
+        }
       }
     }
-  }
-
-  .about-aside {
-    background: rgba(200, 200, 200, 0.2);
+    .about-aside {
+      // background: rgba(200, 200, 200, 0.2);
+      .skill-item {
+        background: rgba(200, 200, 200, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+        &:hover {
+          background: rgba(200, 200, 200, 1);
+        }
+      }
+    }
   }
 }

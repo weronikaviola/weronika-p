@@ -9,7 +9,64 @@ export const DESCRIPTION = [
 ];
 
 export const SKILLS = [
-  "JavaScript",
-  "React",
-  "Ruby",
+  {
+    name: "JavaScript",
+    logo: "devicon-javascript-plain colored",
+  },
+  {
+    name: "React",
+    logo: "devicon-react-original colored",
+  },
+  {
+    name: "Ruby",
+    logo: "devicon-ruby-plain colored",
+  },
+  {
+    name: "Python",
+    logo: "devicon-python-plain colored",
+  },
+  {
+    name: "NodeJS",
+    logo: "devicon-nodejs-plain colored",
+  },
+  {
+    name: "Rails",
+    logo: "devicon-rails-plain colored",
+  },
+  {
+    name: "Django",
+    logo: "devicon-django-plain colored",
+  },
+  {
+    name: "postgreSQL",
+    logo: "devicon-postgresql-plain colored",
+  },
+  {
+    name: "mongoDB",
+    logo: "devicon-mongodb-plain colored",
+  },
+  {
+    name: "docker",
+    logo: "devicon-docker-plain colored",
+  },
+  {
+    name: "heroku",
+    logo: "devicon-heroku-original colored",
+  },
+  {
+    name: "GitHub",
+    logo: "devicon-github-plain colored",
+  },
+  {
+    name: "git",
+    logo: "devicon-git-plain colored",
+  },
+  {
+    name: "sass",
+    logo: "devicon-sass-plain colored",
+  },
+  {
+    name: "visualstudio",
+    logo: "devicon-visualstudio-plain colored",
+  }
 ];

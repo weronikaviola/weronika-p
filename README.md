@@ -6,3 +6,5 @@ todo:
 * write about me page
 * do something with the main page
 * smooth scroll on music?
+
+* the sky bcg is in full size -> resize it before deploying

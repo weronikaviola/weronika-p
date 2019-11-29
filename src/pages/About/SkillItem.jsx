@@ -2,15 +2,24 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const SkillItem = ({
-  skill,
+  name,
+  logo,
 }) => (
-  <div>
-    {skill}
+  <div className="spacer-1 skill-item">
+    <span className="spacer-right-2">
+      <i className={logo} />
+    </span>
+    {name}
   </div>
 );
 
 SkillItem.propTypes = {
-  skill: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  logo: PropTypes.string,
+};
+
+SkillItem.defaultProps = {
+  logo: "",
 };
 
 export default SkillItem;

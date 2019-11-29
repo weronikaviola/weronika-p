@@ -18,6 +18,10 @@ const MenuItem = ({
 MenuItem.propTypes = {
   alternativeName: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  root: PropTypes.string.isRequired,
+  root: PropTypes.bool,
+};
+
+MenuItem.defaultProps = {
+  root: false,
 };
 export default MenuItem;
