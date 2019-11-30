@@ -13,10 +13,13 @@ $black-opaque: rgba(0,0,0,0.8);
 $red: red;
 $white: #efdecd;
 $white-blue: #E3F0FC;
+$white-opaque: rgba(255, 255, 255, 0.6);
 $gray: rgb(100,100, 100);
 
 $base-padder: 5px;
 
 $font-size-nav: calc(20px + 6 * ((100vw - 320px) / 680));
+$font-size-nav-mobile: calc(30px + 6 * ((100vw - 320px) / 680));
 $font-size-base: calc(10px + 6 * ((100vw - 320px) / 680));
+$font-size-base-mobile: calc(13px + 6 * ((100vw - 320px) / 680));
 $font-size-card: calc(25px + 6 * ((100vw - 320px) / 680));

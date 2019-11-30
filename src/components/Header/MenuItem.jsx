@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 const MenuItem = ({
   alternativeName,
   name,
+  onClick,
   root,
 }) => (
-  <button className="menu-item" type="button">
+  <button className="menu-item" type="button" onClick={onClick}>
     <Link to={`/${root ? "" : name}`}>
       <span className="name">{name}</span>
       <span className="alt-name">{alternativeName}</span>
@@ -18,10 +19,12 @@ const MenuItem = ({
 MenuItem.propTypes = {
   alternativeName: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
   root: PropTypes.bool,
 };
 
 MenuItem.defaultProps = {
+  onClick: undefined,
   root: false,
 };
 export default MenuItem;
