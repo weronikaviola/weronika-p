@@ -15,12 +15,38 @@ export const LOREM_IPSUM = [
   "Vivamus gravida hendrerit erat id euismod. Vestibulum ex elit, gravida quis velit et, fermentum consectetur sem. Nam venenatis convallis facilisis. Duis eget sapien at dolor vulputate fringilla. Nunc at accumsan eros, non suscipit massa. Integer vitae dignissim purus. Nulla in justo vel lacus eleifend imperdiet a vitae elit. Quisque vitae mi sed massa bibendum eleifend.",
 ];
 
-export const EXPERIENCE = [
+export const EXPERIENCE_TECH = [
   {
     name: "Silversheet",
     position: "Software Engineer",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis at elit nec varius. Suspendisse pulvinar sagittis tellus et mattis. Sed tincidunt neque quis elementum mollis. Aliquam leo sem, venenatis sed sapien tristique, maximus molestie libero. Nulla sit amet dolor sit amet metus placerat mattis et id felis. In eleifend, erat auctor vestibulum lacinia, lacus dolor posuere lacus, ac imperdiet enim eros id ex. Curabitur porttitor sed felis sit amet luctus.",
-  }
+    description: "Silversheet is a company that is revolutionizing the healthcare industry by designing a completely new way of handling medical credentialing. This very small startup is a great place to learn and develop new skills. Every engineer provides solutions for database designs, backend, frontend, and customer support while working in an agile environment. As a member of the team that builds the enterprise version of our software, I am responsible for creating new features as well as refactoring old code to accommodate enterprise functionality.",
+    bullets: [
+      "Personally responsible for implementing a few key features by architecting, designing, building and testing",
+      "Designing scalable algorithms using Ruby on Rails backend",
+      "Building reusable React-Redux components while following the best React practices",
+      "Working with large and complex data using postgreSQL and mongoDB",
+    ],
+    startDate: "04/2019",
+    endDate: "present",
+    link: {
+      name: "Silversheet homepage",
+      address: "https://www.silversheet.com",
+    },
+  },
+  {
+    name: "npm create-redux-component",
+    position: "Owner",
+    description: "I developed the `create-redux-component` to speed up the process of creating new React-Redux components for my company. It works best with Ruby backend and allows the user to create a functional, ready to use component within a few seconds. Just add the component to the react-bundle file and use it in your views!",
+    bullets: [
+      "built this package with javascript and commander",
+    ],
+    startDate: "10/2019",
+    endDate: "present",
+    link: {
+      name: "npm create-redux-component page",
+      address: "https://www.npmjs.com/package/create-redux-component",
+    },
+  },
 ];
 
 export const SKILLS = [
@@ -33,20 +59,23 @@ export const SKILLS = [
     logo: "devicon-react-original colored",
   },
   {
-    name: "Ruby",
-    logo: "devicon-ruby-plain colored",
-  },
-  {
-    name: "Python",
-    logo: "devicon-python-plain colored",
+    name: "Redux",
   },
   {
     name: "NodeJS",
     logo: "devicon-nodejs-plain colored",
   },
   {
+    name: "Ruby",
+    logo: "devicon-ruby-plain colored",
+  },
+  {
     name: "Rails",
     logo: "devicon-rails-plain colored",
+  },
+  {
+    name: "Python",
+    logo: "devicon-python-plain colored",
   },
   {
     name: "Django",
@@ -72,4 +101,7 @@ export const SKILLS = [
     name: "git",
     logo: "devicon-git-plain colored",
   },
+  {
+    name: "bash",
+  }
 ];

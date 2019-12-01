@@ -1,11 +1,13 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from "react";
 import {
   DESCRIPTION,
   ADA_LOVELACE_QUOTE,
   SKILLS,
-  EXPERIENCE,
+  EXPERIENCE_TECH,
 } from "../../Constants";
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
+import ExperienceItem from "./ExperienceItem";
 import SkillItem from "./SkillItem";
 import Quote from "../../components/Quote";
 
@@ -28,7 +30,6 @@ const About = () => {
       <div className="about-page flex">
         <div className="width-20 flex flex-column about-aside padder-5">
           {SKILLS.map((skill) => (
-            // eslint-disable-next-line react/jsx-props-no-spreading
             <SkillItem {...skill} key={skill.name} />
           ))}
         </div>
@@ -41,14 +42,8 @@ const About = () => {
               </div>
             ))}
             <div className="spacer-top-10">
-              {EXPERIENCE.map((entry) => (
-                <div className="paragraph padder-1" key={entry.name}>
-                  {entry.name}
-                  {entry.position}
-                  <div className="padder-1">
-                    {entry.description}
-                  </div>
-                </div>
+              {EXPERIENCE_TECH.map((entry) => (
+                <ExperienceItem {...entry} key={entry.name} />
               ))}
             </div>
           </div>

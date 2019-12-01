@@ -8,7 +8,7 @@ const Quote = ({
     <div className="quote spacer-1">
       {text}
     </div>
-    <div className="right-span">
+    <div className="align-right">
       {`~ ${author}`}
     </div>
   </div>

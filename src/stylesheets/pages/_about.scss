@@ -29,6 +29,12 @@
     }
   }
 }
+.experience-item {
+  .experience-item__header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 @media only screen and (max-width: 812px) {
   .about-aside {
@@ -36,5 +42,10 @@
   }
   .about-main {
     width: 100vw !important;
+  }
+  .experience-item {
+    .experience-item__header {
+      flex-direction: column;
+    }
   }
 }

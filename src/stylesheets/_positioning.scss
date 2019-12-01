@@ -7,6 +7,9 @@
   &.flex-wrap {
     flex-wrap: wrap;
   }
+  &.space-between {
+    justify-content: space-between;
+  }
 }
 .flex-column {
   flex-direction: column;
@@ -27,14 +30,14 @@
   .spacer-#{$i} {
     margin: #{$base-padder * $i};
   }
-  .spacer-top-#{i} {
-    margin-top: #{$base-padder * $i};
-  }
   .spacer-left-#{$i} {
     margin-left:  #{$base-padder * $i};
   }
   .spacer-right-#{$i} {
-    margin-right:  #{$base-padder * $i};
+    margin-right: #{$base-padder * $i};
+  }
+  .spacer-top-#{$i} {
+    margin-top: #{$base-padder * $i};
   }
 }
 @for $i from 20 through 100 {
