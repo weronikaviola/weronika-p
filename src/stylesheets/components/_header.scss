@@ -1,5 +1,6 @@
 .header {
   height: 10vh;
+  box-shadow: 10px 10px 10px black;
 }
 
 .mobile-nav-menu {
@@ -59,7 +60,7 @@
 @media only screen and (max-width: 812px) {
   .nav-menu {
     display: block;
-    background: $white-opaque;
+    background: $white-semi-opaque;
     padding-top: 0;
     margin-top: 0;
     position: absolute;

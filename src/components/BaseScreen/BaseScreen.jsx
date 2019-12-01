@@ -6,12 +6,14 @@ const BaseScreen = ({
   classNames,
   height,
   id,
+  onScroll,
   style,
 }) => (
   <div
     className={`base-screen ${classNames} height-${height}`}
     id={id}
     style={style}
+    onScroll={onScroll}
   >
     {children}
   </div>
@@ -24,6 +26,7 @@ BaseScreen.propTypes = {
   classNames: PropTypes.string,
   height: PropTypes.string,
   id: PropTypes.string,
+  onScroll: PropTypes.func,
   style: PropTypes.objectOf(PropTypes.string),
 };
 
@@ -31,6 +34,7 @@ BaseScreen.defaultProps = {
   classNames: "",
   height: "90",
   id: "",
+  onScroll: undefined,
   style: undefined,
 };
 

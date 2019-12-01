@@ -1,5 +1,5 @@
 /* eslint-disable no-multi-str */
-export const MUSIC_DESCRIPTION = "I am also a violist, violinist, and composer. \
+export const MUSIC_DESCRIPTION = "As you know, I am also a violist, violinist, and composer. \
   As a member of various classical orchestras and ensembles I performed around the globe, \
   including famous venues like Usher Hall in Edinburgh, Musikverein Golden Hall in Vienna, Keimyung University in South Korea, \
   and many more. I performed during the Warsaw Autumn contemporary music festival, \
@@ -34,5 +34,28 @@ export const MUSIC_CAROUSEL_ITEMS = [
     title: "WENA - Wzwyz",
     image: "https://i.imgur.com/HI7Yxla.png",
     link: "https://www.facebook.com/watch/?v=640599346015265",
+  },
+];
+
+export const MUSIC_IMAGE_GALLERY = [
+  {
+    path: "/images/music_gallery/bw.jpg",
+    alt: "violin and saxophone player",
+  },
+  {
+    path: "/images/music_gallery/harp.jpg",
+    alt: "classical ensamble",
+  },
+  {
+    path: "/images/music_gallery/leader.jpg",
+    alt: "viola section leader",
+  },
+  {
+    path: "/images/music_gallery/orchestra.jpg",
+    alt: "symphony orchestra",
+  },
+  {
+    path: "/images/music_gallery/russian.jpg",
+    alt: "russian traditional band",
   },
 ];

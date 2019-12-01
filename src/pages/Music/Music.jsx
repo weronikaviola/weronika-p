@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import FontAwesome from "react-fontawesome";
 import {
   MUSIC_DESCRIPTION,
   MUSIC_CAROUSEL_ITEMS,
+  MUSIC_IMAGE_GALLERY,
 } from "../../Constants";
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import Carousel from "../../components/Carousel/Carousel";
+import Slideshow from "../../components/Slideshow/Slideshow";
+
+const BLUR_OFFSET = 100;
 
 const Music = () => {
+  const [blurred, setBlurred] = useState(false);
   const moveDown = () => {
     document.getElementById("screen-2").scrollIntoView({ behavior: "smooth" });
   };
+  const onScroll = (evt) => {
+    const offset = evt.target.scrollTop;
+    if (offset > BLUR_OFFSET) setBlurred(true);
+    if (offset < BLUR_OFFSET) setBlurred(false);
+  };
 
   return (
-    <>
-      <BaseScreen classNames="music-screen" id="screen-1">
-        <div className="music-parallax">
+    <BaseScreen onScroll={onScroll}>
+      <div className="music-screen" id="screen-1">
+        <div className={`music-parallax ${blurred && "blur"}`}>
           <FontAwesome
             name="chevron-down"
             size="5x"
@@ -23,33 +33,23 @@ const Music = () => {
             onClick={moveDown}
           />
         </div>
-      </BaseScreen>
-      <BaseScreen
-        height="100"
-        classNames="wooden-floor"
-        id="screen-2"
-      >
-        <div className="music-screen flex padder-15">
-          <div className="music-description text spacer-right-10 justify text-shadow__classic-black">
+      </div>
+      <div className="music-screen wooden-floor height-90" id="screen-2">
+        <div className="flex music-description__container">
+          <div className="music-description text justify text-shadow__classic-black">
             {MUSIC_DESCRIPTION}
           </div>
-          <div className="iframe-container standard-shadow">
-            <iframe
-              title="soundcloud-player"
-              width="100%"
-              height="300"
-              frameBorder="no"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/525172536&color=%233c3a39&auto_play=false&hide_related=false&show_user=false&show_reposts=false"
-            />
+          <div className="slideshow-container">
+            <Slideshow images={MUSIC_IMAGE_GALLERY} />
           </div>
         </div>
         <Carousel
           title="videos"
-          height="50"
+          height="40"
           items={MUSIC_CAROUSEL_ITEMS}
         />
-      </BaseScreen>
-    </>
+      </div>
+    </BaseScreen>
   );
 };
 

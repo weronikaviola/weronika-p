@@ -1,5 +1,5 @@
 .blur {
-  filter: blur(5px);
+  filter: blur(1.5px);
   transition: 1s filter ease-in-out;
 }
 .bcg-white {
@@ -26,4 +26,7 @@
 .visibility-hidden {
   visibility: hidden;
   transition: all ease-in-out 0.5s;
+}
+.bcg-transparent {
+  background: transparent;
 }

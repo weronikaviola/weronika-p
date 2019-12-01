@@ -1,12 +1,18 @@
 .music-screen {
   background: transparent;
-  .iframe-container {
-    width: 40vw;
-    margin: 0 auto;
-  }
-  .music-description {
-    background: transparent;
-    width: 60vw;
+  .music-description__container {
+    height: 50vh;
+    .music-description {
+      background: transparent;
+      width: 60vw;
+      padding: 50px;
+    }
+    .slideshow-container {
+      padding: 50px;
+      padding-left: 0;
+      width: 40vw;
+      position: relative;
+    }
   }
   .music-parallax {
     background-image: url("/images/weroviolin.jpg");
@@ -35,14 +41,17 @@
     .music-parallax {
       background-position: left;
     }
-    .iframe-container {
-      display: none;
-    }
-    .music-description {
-      margin: 0 auto;
-      padding: 10%;
-      width: 100%;
-      font-size: $font-size-base-mobile;
+    .music-description__container {
+      height: auto;
+      .music-description {
+        margin: 0 auto;
+        padding: 10%;
+        width: 100%;
+        font-size: $font-size-base-mobile;
+      }
+      .slideshow-container {
+        display: none;
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 .about-page-container {
-  background: url("/images/sky_full-size.jpeg");
+  background: url("/images/sky_small-size.jpg");
   background-size: auto 100%;
   transition: background-position 1s ease;
   .about-page {
@@ -13,9 +13,13 @@
           
         }
       }
+
     }
     .about-aside {
       overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       .skill-item {
         background: rgba(200, 200, 200, 0.8);
         background: linear-gradient(90deg, rgba(233,206,180,0.8) 0%, rgba(239,222,205,0.8) 25%, rgba(172,145,118,0.8) 100%);
@@ -36,7 +40,7 @@
   }
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 992px) {
   .about-aside {
     display: none;
   }
