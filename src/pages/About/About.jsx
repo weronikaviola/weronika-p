@@ -3,7 +3,7 @@ import {
   DESCRIPTION,
   ADA_LOVELACE_QUOTE,
   SKILLS,
-  LOREM_IPSUM,
+  EXPERIENCE,
 } from "../../Constants";
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import SkillItem from "./SkillItem";
@@ -33,23 +33,24 @@ const About = () => {
           ))}
         </div>
         <div className="width-80 about-main padder-5" onScroll={onScroll}>
-          <div className="description code text-shadow__discrete">
+          <div className="description code text-shadow__classic-black">
             <Quote text={ADA_LOVELACE_QUOTE[0]} author={ADA_LOVELACE_QUOTE[1]} />
             {DESCRIPTION.map((paragraph) => (
               <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
                 {paragraph}
               </div>
             ))}
-            {LOREM_IPSUM.map((paragraph) => (
-              <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
-                {paragraph}
-              </div>
-            ))}
-            {LOREM_IPSUM.map((paragraph) => (
-              <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
-                {paragraph}
-              </div>
-            ))}
+            <div className="spacer-top-10">
+              {EXPERIENCE.map((entry) => (
+                <div className="paragraph padder-1" key={entry.name}>
+                  {entry.name}
+                  {entry.position}
+                  <div className="padder-1">
+                    {entry.description}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

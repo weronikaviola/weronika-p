@@ -7,9 +7,11 @@ const SkillItem = ({
 }) => (
   <div className="spacer-1 skill-item standard-shadow">
     <span className="spacer-right-2">
-      <i className={logo} />
+      <i className={`${logo} text-shadow__classic-black`} />
     </span>
-    {name}
+    <span className="text-shadow__discrete">
+      {name}
+    </span>
   </div>
 );
 

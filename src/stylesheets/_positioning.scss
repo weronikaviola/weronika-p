@@ -27,6 +27,9 @@
   .spacer-#{$i} {
     margin: #{$base-padder * $i};
   }
+  .spacer-top-#{i} {
+    margin-top: #{$base-padder * $i};
+  }
   .spacer-left-#{$i} {
     margin-left:  #{$base-padder * $i};
   }
