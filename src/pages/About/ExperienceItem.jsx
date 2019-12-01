@@ -19,7 +19,7 @@ const ExperienceItem = ({
     <div className="paragraph padder-1 spacer-1 experience-item" key={name}>
       <div className="experience-item__header bcg-semi-black padder-1">
         <div>{`${name} - ${position}`}</div>
-        <div>{`${startDate} - ${endDate}`}</div>
+        <div>{startDate && `${startDate} - ${endDate}`}</div>
       </div>
       <div className="align-right">
         <a href={address} target="__blank">

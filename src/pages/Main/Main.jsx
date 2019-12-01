@@ -5,8 +5,9 @@ const Main = () => (
   <BaseScreen
     classNames="main-screen"
   >
-    <div className="main">
-      this website is under construction. Come back soon!
+    <div className="main code text-shadow__classic-black">
+      <div className="title">Weronika Miller</div>
+      <div className="subtitle">software engineer</div>
     </div>
   </BaseScreen>
 );

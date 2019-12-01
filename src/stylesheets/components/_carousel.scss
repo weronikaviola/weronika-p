@@ -1,10 +1,6 @@
 .carousel {
   background: transparent;
   color: $white;
-  .carousel__title {
-    font-size: $font-size-nav;
-    text-align: center;
-  }
   .carousel__videos {
     display: flex;
     position: relative;

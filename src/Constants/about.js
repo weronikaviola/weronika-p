@@ -18,7 +18,7 @@ export const LOREM_IPSUM = [
 export const EXPERIENCE_TECH = [
   {
     name: "Silversheet",
-    position: "Software Engineer",
+    position: "software engineer",
     description: "Silversheet is a company that is revolutionizing the healthcare industry by designing a completely new way of handling medical credentialing. This very small startup is a great place to learn and develop new skills. Every engineer provides solutions for database designs, backend, frontend, and customer support while working in an agile environment. As a member of the team that builds the enterprise version of our software, I am responsible for creating new features as well as refactoring old code to accommodate enterprise functionality.",
     bullets: [
       "Personally responsible for implementing a few key features by architecting, designing, building and testing",
@@ -35,16 +35,25 @@ export const EXPERIENCE_TECH = [
   },
   {
     name: "npm create-redux-component",
-    position: "Owner",
+    position: "owner",
     description: "I developed the `create-redux-component` to speed up the process of creating new React-Redux components for my company. It works best with Ruby backend and allows the user to create a functional, ready to use component within a few seconds. Just add the component to the react-bundle file and use it in your views!",
     bullets: [
-      "built this package with javascript and commander",
+      "built this package with javascript and commander.",
     ],
     startDate: "10/2019",
     endDate: "present",
     link: {
       name: "npm create-redux-component page",
       address: "https://www.npmjs.com/package/create-redux-component",
+    },
+  },
+  {
+    name: "www.weronikamiller.dev",
+    position: "webmaster",
+    description: "This page was created in React. Visit the github repo to learn more.",
+    link: {
+      name: "github repo",
+      address: "https://github.com/weronikaviola/weronika-p",
     },
   },
 ];

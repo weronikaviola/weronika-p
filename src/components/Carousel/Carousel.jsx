@@ -31,8 +31,7 @@ const Carousel = ({
   };
 
   return (
-    <div className={`height-${height} carousel padder-10`}>
-      <div className="carousel__title caption text-shadow__underline bcg-semi-black">{title}</div>
+    <div className={`height-${height} carousel padder-1`}>
       <div className="carousel__videos">
         <FontAwesome
           name="chevron-left"
