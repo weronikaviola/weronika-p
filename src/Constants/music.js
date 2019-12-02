@@ -12,27 +12,27 @@ export const MUSIC_DESCRIPTION = "As you know, I am also a violist, violinist, a
 export const MUSIC_CAROUSEL_ITEMS = [
   {
     title: "Vitali Chaccone Arranged for Viola Quartet",
-    image: "https://i.imgur.com/tCWh7wP.png",
+    image: "/images/music_carousel/vitali.jpg",
     link: "https://youtu.be/3QSFVm6mud0",
   },
   {
     title: "In a Sentimental Mood",
-    image: "https://i.imgur.com/yQHVk3H.png",
+    image: "/images/music_carousel/elington.jpg",
     link: "https://youtu.be/xnhf_IughQo",
   },
   {
     title: "Air on G string",
-    image: "https://i.imgur.com/Womnqwr.png",
+    image: "/images/music_carousel/bach.jpg",
     link: "https://youtu.be/x-b4YCSRiPc",
   },
   {
-    title: "Bartosz Konowalski - Wind's Anger",
-    image: "https://i.imgur.com/qSAs5Gx.png",
+    title: "Bartosz Kowalski - Wind's Anger",
+    image: "/images/music_carousel/kowalski.jpg",
     link: "https://youtu.be/I9C_jPlPiu4",
   },
   {
     title: "WENA - Wzwyz",
-    image: "https://i.imgur.com/HI7Yxla.png",
+    image: "/images/music_carousel/wena.jpg",
     link: "https://www.facebook.com/watch/?v=640599346015265",
   },
 ];
