@@ -15,7 +15,9 @@ const Slideshow = ({
       setBlur(true);
       setTimeout(() => {
         setCurrentImage(calculateNextImage());
-        setBlur(false);
+        setTimeout(() => {
+          setBlur(false);
+        }, 500);
       }, 1000);
     }, 5000);
 

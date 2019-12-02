@@ -43,11 +43,13 @@ const Music = () => {
             <Slideshow images={MUSIC_IMAGE_GALLERY} />
           </div>
         </div>
-        <Carousel
-          title="videos"
-          height="40"
-          items={MUSIC_CAROUSEL_ITEMS}
-        />
+        <div className="music-carousel">
+          <Carousel
+            title="videos"
+            height="40"
+            items={MUSIC_CAROUSEL_ITEMS}
+          />
+        </div>
       </div>
     </BaseScreen>
   );
