@@ -45,18 +45,20 @@ const ExperienceItem = ({
 ExperienceItem.propTypes = {
   bullets: PropTypes.arrayOf(PropTypes.string),
   description: PropTypes.string.isRequired,
-  endDate: PropTypes.string.isRequired,
+  endDate: PropTypes.string,
   link: PropTypes.shape({
     name: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
   }).isRequired,
   name: PropTypes.string.isRequired,
   position: PropTypes.string.isRequired,
-  startDate: PropTypes.string.isRequired,
+  startDate: PropTypes.string,
 };
 
 ExperienceItem.defaultProps = {
   bullets: [],
+  endDate: undefined,
+  startDate: undefined,
 };
 
 export default ExperienceItem;
