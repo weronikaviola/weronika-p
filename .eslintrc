@@ -12,9 +12,12 @@
     "camelcase": "off",
     "import/named": "off",
     "no-param-reassign": ["error", { "props": false }],
+    "no-await-in-loop": "off",
     "jsx-fragments": "off",
+    "arrow-parens": "off",
     "react/no-array-index-key": "off",
     "jsx-a11y/label-has-for": "off",
+    "react/jsx-props-no-spreading": "off",
     "jsx-a11y/label-has-associated-control": ["error", {
       "labelComponents": [],
       "labelAttributes": [],
@@ -29,8 +32,5 @@
     "browser": true,
     "jest": true,
     "jquery": true
-  },
-  "globals": {
-    "SILVERSHEET": false
   }
 }

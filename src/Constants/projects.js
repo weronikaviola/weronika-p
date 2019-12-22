@@ -1,33 +1,69 @@
-/* eslint-disable import/prefer-default-export */
+import PropTypes from "prop-types";
+
 export const PROJECTS = [
   {
+    id: 1,
     name: "Silversheet",
-    title: "jr. Software Engineer",
-    description: [
-      "first line",
-      "second line",
-      "third line",
-    ],
+    title: "software engineer",
     image: "https://i.imgur.com/tc3cpVo.png",
+    url: "www.silversheet.com",
+    importance: 5,
+    area: "silversheet",
   },
   {
+    id: 2,
     name: "npm create-redux-component",
-    title: "Author",
-    description: [
-      "first line",
-      "second line",
-      "third line",
-    ],
+    title: "author",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1280px-Npm-logo.svg.png",
+    url: "https://www.npmjs.com/package/create-redux-component",
+    importance: 5,
+    area: "reactredux",
   },
   {
-    name: "Silversheet",
-    title: "jr. Software Engineer",
-    description: [
-      "first line",
-      "second line",
-      "third line",
-    ],
-    image: "https://i.imgur.com/tc3cpVo.png",
+    id: 3,
+    name: "text to binary translator",
+    title: "author",
+    url: "https://weronikaviola.github.io/text-to-binary-translator",
+    importance: 1,
+    area: "textbinary",
+  },
+  {
+    id: 4,
+    name: "Izabela Bujak - professional website",
+    title: "co-author",
+    url: "www.izabelabujak.com",
+    importance: 2,
+    area: "izabujak",
+  },
+  {
+    id: 5,
+    name: "Leaflet",
+    title: "backend engineer",
+    url: "https://mgr-leaflet.herokuapp.com/main/",
+    importance: 2,
+    area: "leaflet",
+  },
+  {
+    id: 6,
+    name: "Housemates",
+    title: "fullstack engineer",
+    url: "http://house--mates.herokuapp.com/",
+    importance: 2,
+    area: "housemates",
+  },
+  {
+    id: 7,
+    name: "OnePP",
+    title: "fullstack engineer",
+    url: "http://one-pp.herokuapp.com/",
+    importance: 4,
+    area: "onepp",
   },
 ];
+
+export const GRAPH_PROP_TYPES = PropTypes.shape({
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  importance: PropTypes.number.isRequired,
+});

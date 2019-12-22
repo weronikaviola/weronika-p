@@ -36,7 +36,7 @@ export const EXPERIENCE_TECH = [
   {
     name: "npm create-redux-component",
     position: "owner",
-    description: "I developed the `create-redux-component` to speed up the process of creating new React-Redux components for my company. It works best with Ruby backend and allows the user to create a functional, ready to use component within a few seconds. Just add the component to the react-bundle file and use it in your views!",
+    description: "I developed the `create-redux-component` to speed up the process of creating new React-Redux components for Ruby on Rails apps that use React frontend. It allows the user to create a functional, ready to use component within a few seconds. Just add the component to the react-bundle file and use it in your views!",
     bullets: [
       "built this package with javascript and commander.",
     ],

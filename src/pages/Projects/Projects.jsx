@@ -1,22 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
+import Graph from "../../components/Graph/Graph";
 
-import { PROJECTS } from "../../Constants";
+import {
+  PROJECTS,
+} from "../../Constants";
 
-const Projects = () => {
-  const [visible, changeVisible] = useState(0);
-  const PROJECTS_COUNT = PROJECTS.length - 1;
-
-  return (
-    <>
-      <BaseScreen classNames="projects-screen">
-        <div className="projects-div">
-          
-        </div>
-      </BaseScreen>
-    </>
-  );
-};
+const Projects = () => (
+  <>
+    <BaseScreen classNames="projects-screen">
+      <div className="projects-div">
+        <Graph elements={PROJECTS} />
+      </div>
+    </BaseScreen>
+  </>
+);
 
 export default Projects;

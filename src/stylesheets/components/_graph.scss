@@ -1,0 +1,19 @@
+.graph {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2vw;
+  grid-row-gap: 3vh;
+  grid-template-areas:
+    "leaflet reactredux"
+    "silversheet"
+    "onepp housemates"
+    "izabujak textbinary";
+  .graph__element {
+    height: 100px;
+    width: 100px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
+}
