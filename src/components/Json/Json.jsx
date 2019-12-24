@@ -20,7 +20,7 @@ const Json = ({
             </div>
             <div className="json__row spacer-left-8 indent-8">
               {`"url":`}
-              <a href={element.url}>{` "${element.url}"`}</a>
+              <a href={element.url} target="__blank">{` "${element.url}"`}</a>
             </div>
             <div className="json__row spacer-left-4">
               {`}${idx < elements.length - 1 ? "," : ""}`}
