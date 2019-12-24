@@ -8,7 +8,6 @@ export const PROJECTS = [
     image: "https://i.imgur.com/tc3cpVo.png",
     url: "www.silversheet.com",
     importance: 5,
-    area: "silversheet",
   },
   {
     id: 2,
@@ -17,7 +16,6 @@ export const PROJECTS = [
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1280px-Npm-logo.svg.png",
     url: "https://www.npmjs.com/package/create-redux-component",
     importance: 5,
-    area: "reactredux",
   },
   {
     id: 3,
@@ -25,7 +23,6 @@ export const PROJECTS = [
     title: "author",
     url: "https://weronikaviola.github.io/text-to-binary-translator",
     importance: 1,
-    area: "textbinary",
   },
   {
     id: 4,
@@ -33,7 +30,6 @@ export const PROJECTS = [
     title: "co-author",
     url: "www.izabelabujak.com",
     importance: 2,
-    area: "izabujak",
   },
   {
     id: 5,
@@ -49,7 +45,6 @@ export const PROJECTS = [
     title: "fullstack engineer",
     url: "http://house--mates.herokuapp.com/",
     importance: 2,
-    area: "housemates",
   },
   {
     id: 7,
@@ -57,7 +52,6 @@ export const PROJECTS = [
     title: "fullstack engineer",
     url: "http://one-pp.herokuapp.com/",
     importance: 4,
-    area: "onepp",
   },
 ];
 

@@ -48,3 +48,9 @@
     width: #{$i}vw;
   }
 }
+@for $i from 1 through 10 {
+  .indent-#{$i} {
+    margin-left: #{$base-padder * ($i+4)};
+    text-indent: #{-($base-padder * ($i - 4))};
+  }
+}

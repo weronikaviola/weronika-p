@@ -1,7 +1,7 @@
 import React from "react";
 
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
-import Graph from "../../components/Graph/Graph";
+import Json from "../../components/Json/Json";
 
 import {
   PROJECTS,
@@ -11,7 +11,7 @@ const Projects = () => (
   <>
     <BaseScreen classNames="projects-screen">
       <div className="projects-div">
-        <Graph elements={PROJECTS} />
+        <Json elements={PROJECTS} />
       </div>
     </BaseScreen>
   </>
