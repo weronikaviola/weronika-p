@@ -32,7 +32,7 @@ const ExperienceItem = ({
       </div>
       <div className="padder-4">
         {bullets.map((bullet) => (
-          <div key={bullet.slice(0, 4)} className="padder-1">
+          <div key={bullet.slice(0, 10)} className="padder-1">
             <FontAwesome name="rocket" className="spacer-right-2" />
             {bullet}
           </div>

@@ -20,4 +20,20 @@
     margin: 0;
     padding: 0;
   }
+
+  //.btn--repo
+  &--repo {
+    border: 1px;
+    background: rgba(255,255,255,0.7);
+    font-size: $font-size-base;
+    outline: 0;
+    cursor: pointer;
+    padding: 10px 30px;
+    position: fixed;
+    right: 0;
+    top: 10vh;
+    &:hover {
+      background: rgba(255,255,255,0.9);
+    }
+  }
 }
