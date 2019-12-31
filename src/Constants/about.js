@@ -115,5 +115,5 @@ export const SKILLS = [
   },
   {
     name: "bash",
-  }
+  },
 ];

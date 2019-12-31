@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from "react";
 import {
-  DESCRIPTION,
   ADA_LOVELACE_QUOTE,
-  SKILLS,
+  DESCRIPTION,
   EXPERIENCE_TECH,
+  SKILLS,
 } from "../../Constants";
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import ExperienceItem from "./ExperienceItem";

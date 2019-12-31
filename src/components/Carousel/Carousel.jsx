@@ -6,7 +6,6 @@ import FontAwesome from "react-fontawesome";
 const Carousel = ({
   items,
   height,
-  title,
 }) => {
   const [active, setActive] = useState(1);
   const itemsLength = items.length;
@@ -71,13 +70,11 @@ const Carousel = ({
 };
 
 Carousel.propTypes = {
-  title: PropTypes.string,
   height: PropTypes.string,
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 Carousel.defaultProps = {
-  title: "",
   height: "50",
 };
 

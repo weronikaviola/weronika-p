@@ -1,3 +1,5 @@
+/* eslint-disable quotes */
+/* eslint-disable react/jsx-curly-brace-presence */
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
@@ -19,7 +21,7 @@ const Json = ({
         </a>
       );
     }
-    return false;
+    return null;
   };
   return (
     <div className="json-wrapper standard-shadow">
@@ -54,9 +56,12 @@ const Json = ({
 };
 
 Json.propTypes = {
-  elements: PropTypes.shape({
-    
-  })
+  elements: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+  })).isRequired,
   includeGithubLink: PropTypes.bool,
 };
 

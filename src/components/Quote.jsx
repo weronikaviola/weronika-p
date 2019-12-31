@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Quote = ({
   text,
@@ -13,5 +14,10 @@ const Quote = ({
     </div>
   </div>
 );
+
+Quote.propTypes = {
+  text: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+};
 
 export default Quote;

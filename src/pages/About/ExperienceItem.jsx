@@ -16,8 +16,8 @@ const ExperienceItem = ({
     name: linkName,
   } = link;
   return (
-    <div className="paragraph padder-1 spacer-1 experience-item" key={name}>
-      <div className="experience-item__header bcg-semi-black padder-1">
+    <div className="paragraph padder-bottom-1 spacer-1 experience-item" key={name}>
+      <div className="experience-item__header bcg-semi-black standard-shadow padder-1">
         <div>{`${name} - ${position}`}</div>
         <div>{startDate && `${startDate} - ${endDate}`}</div>
       </div>
