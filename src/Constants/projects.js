@@ -18,14 +18,6 @@ export const PROJECTS = [
     importance: 5,
   },
   {
-    id: 5,
-    name: "Leaflet",
-    title: "backend engineer",
-    url: "https://mgr-leaflet.herokuapp.com/main/",
-    importance: 2,
-    area: "leaflet",
-  },
-  {
     id: 7,
     name: "OnePP",
     title: "fullstack engineer",
@@ -33,11 +25,12 @@ export const PROJECTS = [
     importance: 4,
   },
   {
-    id: 6,
-    name: "Housemates",
-    title: "fullstack engineer",
-    url: "http://house--mates.herokuapp.com/",
+    id: 5,
+    name: "Leaflet",
+    title: "backend engineer",
+    url: "https://mgr-leaflet.herokuapp.com/main/",
     importance: 2,
+    area: "leaflet",
   },
   {
     id: 3,
@@ -52,6 +45,13 @@ export const PROJECTS = [
     title: "co-author",
     url: "https://www.izabelabujak.com",
     importance: 2,
+  },
+  {
+    id: 8,
+    name: "checkers",
+    title: "author",
+    url: "https://github.com/weronikaviola/Checkers---game",
+    importance: 1,
   },
 ];
 
