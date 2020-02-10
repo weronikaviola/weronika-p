@@ -1,5 +1,5 @@
 .about-page-container {
-  background: url("/images/sky_small-web.jpf");
+  background: url("/images/sky_small-web.jpg");
   background-size: auto 100%;
   transition: background-position 1s ease;
   .about-page {
@@ -8,12 +8,6 @@
       background: rgba(0, 0, 0, 0.6);
       color: $white;
       overflow: auto;
-      .description {
-        .paragraph {
-          
-        }
-      }
-
     }
     .about-aside {
       overflow: auto;
