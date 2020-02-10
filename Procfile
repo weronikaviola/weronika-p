@@ -1,3 +1,1 @@
-"scripts": {
-  "heroku-postbuild": "npm run build"
-}
+web node server.js
