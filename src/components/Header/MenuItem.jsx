@@ -8,8 +8,8 @@ const MenuItem = ({
   onClick,
   root,
 }) => (
-  <button className="menu-item" type="button" onClick={onClick}>
-    <Link to={`/${root ? "" : name}`}>
+  <button className="menu-item" type="button" onClick={onClick} tabIndex="-1">
+    <Link to={`/${root ? "" : name}`} tabIndex="0">
       <span className="name">{name}</span>
       <span className="alt-name">{alternativeName}</span>
     </Link>

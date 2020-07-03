@@ -18,7 +18,7 @@ const ExperienceItem = ({
   return (
     <div className="paragraph padder-bottom-1 spacer-1 experience-item" key={name}>
       <div className="experience-item__header bcg-semi-black standard-shadow padder-1">
-        <div>{`${name} - ${position}`}</div>
+        <div tabIndex="0">{`${name} - ${position}`}</div>
         <div>{startDate && `${startDate} - ${endDate}`}</div>
       </div>
       <div className="align-right">

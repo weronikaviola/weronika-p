@@ -15,7 +15,7 @@ const SkillItem = ({
   };
 
   return (
-    <div className="spacer-1 skill-item standard-shadow">
+    <div className="spacer-1 skill-item standard-shadow" tabIndex="0">
       <span className="spacer-right-2">
         {generateLogo()}
       </span>

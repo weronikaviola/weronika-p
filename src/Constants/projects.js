@@ -40,25 +40,11 @@ export const PROJECTS = [
     area: "leaflet",
   },
   {
-    id: 3,
-    name: "text to binary translator",
-    title: "author",
-    url: "https://weronikaviola.github.io/text-to-binary-translator",
-    importance: 1,
-  },
-  {
     id: 4,
     name: "Izabela Bujak - professional website",
     title: "co-author",
     url: "https://www.izabelabujak.com",
     importance: 2,
-  },
-  {
-    id: 8,
-    name: "checkers",
-    title: "author",
-    url: "https://github.com/weronikaviola/Checkers---game",
-    importance: 1,
   },
 ];
 

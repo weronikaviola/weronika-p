@@ -63,6 +63,17 @@ export const EXPERIENCE_TECH = [
 
 export const SKILLS = [
   {
+    name: "Java",
+    logo: "devicon-java-plain colored",
+  },
+  {
+    name: "Dart",
+  },
+  {
+    name: "Angular",
+    logo: "devicon-angularjs-plain colored",
+  },
+  {
     name: "JavaScript",
     logo: "devicon-javascript-plain colored",
   },
@@ -72,6 +83,10 @@ export const SKILLS = [
   },
   {
     name: "Redux",
+  },
+  {
+    name: "TypeScript",
+    logo: "devicon-typescript-plain colored"
   },
   {
     name: "NodeJS",

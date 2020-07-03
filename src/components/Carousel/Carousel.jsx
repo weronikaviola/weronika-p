@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import PropTypes from "prop-types";
 
 import FontAwesome from "react-fontawesome";
+
+const ENTER_KEY_CODE = 13;
 
 const Carousel = ({
   items,
   height,
 }) => {
+  const mountedRef = useRef(true);
   const [active, setActive] = useState(1);
+  useEffect(() => {
+    return () => {
+      mountedRef.current = false;
+    }
+  }, []);
+
   const itemsLength = items.length;
   const generateClassName = (idx) => {
     let baseClass = "carousel__item standard-shadow";
@@ -21,11 +30,13 @@ const Carousel = ({
 
   const moveLeft = () => {
     const newActive = active - 1 < 0 ? itemsLength - 1 : active - 1;
+    if (!mountedRef.current) return null;
     setActive(newActive);
   };
 
   const moveRight = () => {
     const newActive = (active + 1) % itemsLength;
+    if (!mountedRef.current) return null;
     setActive(newActive);
   };
 
@@ -37,6 +48,12 @@ const Carousel = ({
           size="3x"
           className="spacer-right-5 pointer text-shadow__discrete"
           onClick={moveLeft}
+          onKeyDown={(e) => {
+            if (e.keyCode === ENTER_KEY_CODE) {
+              moveLeft();
+            }
+          }}
+          tabIndex="0"
         />
         <div className="carousel__items">
           {items.map((item, idx) => (
@@ -63,6 +80,12 @@ const Carousel = ({
           size="3x"
           className="spacer-left-5 pointer text-shadow__discrete"
           onClick={moveRight}
+          onKeyDown={(e) => {
+            if (e.keyCode === ENTER_KEY_CODE) {
+              moveRight();
+            }
+          }}
+          tabIndex="0"
         />
       </div>
     </div>

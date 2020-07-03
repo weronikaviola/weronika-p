@@ -10,10 +10,11 @@ const Json = ({
   const optionalIcon = () => {
     if (includeGithubLink) {
       return (
-        <a href="https://github.com/weronikaviola/" target="__blank">
+        <a href="https://github.com/weronikaviola/" target="__blank" tabIndex="-1">
           <button
             className="btn btn--repo standard-shadow"
             type="button"
+            tabIndex="0"
           >
             github
             <i className="devicon-github-plain colored spacer-left-2" />
