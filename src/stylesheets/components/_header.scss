@@ -37,7 +37,7 @@
 
 @media only screen and (min-width: 813px) {
   .menu-item {
-    &:hover {
+    &:hover, &.bin-mode {
       transition: font-size 1s;
       font-size: $font-size-base;
       background: transparent;

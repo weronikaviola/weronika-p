@@ -10,8 +10,9 @@ import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import ExperienceItem from "./ExperienceItem";
 import SkillItem from "./SkillItem";
 import Quote from "../../components/Quote";
+import TextField from "../../components/TextField/TextField";
 
-const About = () => {
+const About = ({binMode}) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const onScroll = (evt) => {
@@ -30,20 +31,20 @@ const About = () => {
       <div className="about-page flex">
         <div className="width-20 flex flex-column about-aside padder-5">
           {SKILLS.map((skill) => (
-            <SkillItem {...skill} key={skill.name} />
+            <SkillItem {...skill} key={skill.name} binMode={binMode}/>
           ))}
         </div>
         <div className="width-80 about-main padder-5" onScroll={onScroll}>
           <div className="description code text-shadow__classic-black">
-            <Quote text={ADA_LOVELACE_QUOTE[0]} author={ADA_LOVELACE_QUOTE[1]} />
+            <Quote text={ADA_LOVELACE_QUOTE[0]} author={ADA_LOVELACE_QUOTE[1]} binMode={binMode}/>
             {DESCRIPTION.map((paragraph) => (
               <div className="paragraph padder-1" key={paragraph.slice(0, 10)}>
-                {paragraph}
+                <TextField value={paragraph} binMode={binMode} />
               </div>
             ))}
             <div className="spacer-top-10">
               {EXPERIENCE_TECH.map((entry) => (
-                <ExperienceItem {...entry} key={entry.name} />
+                <ExperienceItem {...entry} key={entry.name} binMode={binMode} />
               ))}
             </div>
           </div>

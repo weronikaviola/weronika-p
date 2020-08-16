@@ -17,6 +17,17 @@ export const LOREM_IPSUM = [
 
 export const EXPERIENCE_TECH = [
   {
+    name: "Google",
+    position: "software engineer",
+    description: "",
+    startDate: "04/2020",
+    endDate: "present",
+    link: {
+      name: "Google",
+      address: "https://google.com",
+    },
+  },
+  {
     name: "Silversheet",
     position: "software engineer",
     description: "Silversheet is a company that is revolutionizing the healthcare industry by designing a completely new way of handling medical credentialing. This very small startup is a great place to learn and develop new skills. Every engineer provides solutions for database designs, backend, frontend, and customer support while working in an agile environment. As a member of the team that builds the enterprise version of our software, I am responsible for creating new features as well as refactoring old code to accommodate enterprise functionality.",
@@ -28,7 +39,7 @@ export const EXPERIENCE_TECH = [
       "Worked in a fast-paced, high-growth environment, while constantly learning new skills",
     ],
     startDate: "04/2019",
-    endDate: "present",
+    endDate: "04/2020",
     link: {
       name: "Silversheet homepage",
       address: "https://www.silversheet.com",

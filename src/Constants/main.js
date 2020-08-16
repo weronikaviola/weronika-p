@@ -10,10 +10,6 @@ export const MENU_ITEMS = [
     alternative: "01101101 01100101",
   },
   {
-    name: "projects",
-    alternative: "01110111 01101111 01110010 01101011",
-  },
-  {
     name: "music",
     alternative: "01100001 01110010 01110100",
   },

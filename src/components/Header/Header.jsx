@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MenuItem from "./MenuItem";
 import { MENU_ITEMS } from "../../Constants";
 
-const Header = () => {
+const Header = ({binMode}) => {
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,6 +24,7 @@ const Header = () => {
             onClick={toggleMenu}
             root={item.root}
             key={item.name}
+            binMode={binMode}
           />
         ))}
       </div>

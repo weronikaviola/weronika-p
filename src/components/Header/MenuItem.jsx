@@ -4,14 +4,20 @@ import { Link } from "react-router-dom";
 
 const MenuItem = ({
   alternativeName,
+  binMode,
   name,
   onClick,
   root,
 }) => (
-  <button className="menu-item" type="button" onClick={onClick} tabIndex="-1">
+  <button className={`menu-item ${binMode ? "bin-mode" : ""}`} type="button" onClick={onClick} tabIndex="-1">
     <Link to={`/${root ? "" : name}`} tabIndex="0">
-      <span className="name">{name}</span>
-      <span className="alt-name">{alternativeName}</span>
+      {!binMode ? (
+        <span>
+          <span className="name">{name}</span>
+          <span className="alt-name">{alternativeName}</span>
+        </span>
+      ) : (<span>{alternativeName}</span>) }
+
     </Link>
   </button>
 );

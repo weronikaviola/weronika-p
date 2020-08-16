@@ -8,8 +8,9 @@ import {
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import Carousel from "../../components/Carousel/Carousel";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import TextField from "../../components/TextField/TextField";
 
-const Music = () => {
+const Music = ({binMode}) => {
   const moveDown = () => {
     document.getElementById("screen-2").scrollIntoView({ behavior: "smooth" });
   };
@@ -29,7 +30,7 @@ const Music = () => {
       <div className="music-screen wooden-floor height-90" id="screen-2">
         <div className="flex music-description__container">
           <div className="music-description text justify text-shadow__classic-black">
-            {MUSIC_DESCRIPTION}
+            <TextField value={MUSIC_DESCRIPTION} binMode={binMode} />
           </div>
           <div className="slideshow-container">
             <Slideshow images={MUSIC_IMAGE_GALLERY} />

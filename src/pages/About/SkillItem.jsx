@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import FontAwesome from "react-fontawesome";
+import TextField from "../../components/TextField/TextField";
 
 const SkillItem = ({
   name,
   logo,
+  binMode,
 }) => {
   const generateLogo = () => {
     return (
@@ -20,7 +22,7 @@ const SkillItem = ({
         {generateLogo()}
       </span>
       <span className="text-shadow__discrete">
-        {name}
+        <TextField value={name} binMode={binMode} />
       </span>
     </div>
   );
