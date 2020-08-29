@@ -30,7 +30,7 @@ export const EXPERIENCE_TECH = [
   {
     name: "Silversheet",
     position: "software engineer",
-    description: "Silversheet is a company that is revolutionizing the healthcare industry by designing a completely new way of handling medical credentialing. This very small startup is a great place to learn and develop new skills. Every engineer provides solutions for database designs, backend, frontend, and customer support while working in an agile environment. As a member of the team that builds the enterprise version of our software, I am responsible for creating new features as well as refactoring old code to accommodate enterprise functionality.",
+    description: "Silversheet is a company that is revolutionizing the healthcare industry by designing a completely new way of handling medical credentialing. This very small startup was a great place to learn and develop new skills. Every engineer provided solutions for database designs, backend, frontend, and customer support, while working in an agile environment. As a member of the team that built the enterprise version of the software, I was responsible for creating new features as well as refactoring old code to accommodate enterprise functionality.",
     bullets: [
       "Developed Enterprise software by scaling up the existing platform as well as designing entirely new features to satisfy the needs of large organizations",
       "Architected and built key features, like integration with the Certifacts platform, scripts for client data migration, automated reappointment service",

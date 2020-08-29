@@ -20,8 +20,8 @@ const Carousel = ({
   const itemsLength = items.length;
   const generateClassName = (idx) => {
     let baseClass = "carousel__item standard-shadow";
-    const left = active - 1 < 0 ? itemsLength - 1 : active - 1;
-    const right = (active + 1) % itemsLength;
+    const left = active - 1 < 0 ? active + 2 : active - 1;
+    const right = active + 1 >= itemsLength ? active - 2 : active + 1;
     if (idx === active) baseClass += " active";
     else if ([left, right].includes(idx)) baseClass += " small";
     else baseClass += " hidden";
@@ -53,7 +53,7 @@ const Carousel = ({
               moveLeft();
             }
           }}
-          tabIndex="0"
+          // tabIndex="0"
         />
         <div className="carousel__items">
           {items.map((item, idx) => (
@@ -63,6 +63,15 @@ const Carousel = ({
               target="_blank"
               rel="noopener noreferrer"
               key={item.link.slice(item.link.length - 10)}
+              aria-label={`video-link-${idx}`}
+              onKeyDown={(e) => {
+                if (e.keyCode === 39 && (active === idx - 1 || active === idx - 2)) {
+                  moveRight();
+                }
+                if (e.keyCode === 37 && (active === idx + 1 || active === idx + 2)) {
+                  moveLeft()
+                }
+              }}
             >
               <div
                 style={{
@@ -80,12 +89,6 @@ const Carousel = ({
           size="3x"
           className="spacer-left-5 pointer text-shadow__discrete"
           onClick={moveRight}
-          onKeyDown={(e) => {
-            if (e.keyCode === ENTER_KEY_CODE) {
-              moveRight();
-            }
-          }}
-          tabIndex="0"
         />
       </div>
     </div>

@@ -6,10 +6,10 @@ const ToggleSwitch = ({
   on,
 }) => (
   <div className="toggleSwitch">
-    <label className="switch">
-      <input type="checkbox" checked={on} onChange={onSwitch}/>
-      <span className="slider"></span>
+    <label className={`switch ${on ? 'on' : ''}`}>binary mode
+      <input type="checkbox" defaultChecked={on} id="switchInput"/>
     </label>
+    <span className="slider" onClick={onSwitch}></span>
   </div>
 );
 

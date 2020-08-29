@@ -10,6 +10,7 @@
     width: 60px;
     height: 34px;
   }
+
   &:focus-within {
     outline: -webkit-focus-ring-color auto 1px
   }
@@ -44,15 +45,11 @@
     transition: .4s;
   }
 
-  input:checked + .slider {
+  .on + .slider {
     background-color: #c21aa6;
   }
 
-  input:focus + .slider {
-    box-shadow: 0 0 1px #ae09e0;
-  }
-
-  input:checked + .slider:before {
+  .on + .slider:before {
     transform: translateX(26px);
   }
 }

@@ -40,15 +40,17 @@
         .carousel__caption {
           display: block;
         }
+        transition: 1s all ease-in-out;
       }
       &.small {
         height: 50%;
         width: 20%;
         filter: blur(1px);
-        transition: 1s filter ease-in-out;
+        transition: 1s all ease-in-out;
       }
       &.hidden {
         display: none;
+        transition: 1s all ease-in-out;
       }
     }
   }
