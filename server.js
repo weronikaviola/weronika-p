@@ -4,6 +4,13 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+function ensureSecure(req, res, next){
+  if(req.secure){
+    return next();
+  };
+  res.redirect('https://' + req.hostname + req.url);
+}
+
 app.use(express.static(path.join(__dirname, "build"), {
   setHeaders: (res, path) => {
     if (path.endsWith(".html")) {
@@ -11,6 +18,8 @@ app.use(express.static(path.join(__dirname, "build"), {
     }
   },
 }));
+
+app.all('*', ensureSecure);
 
 app.get("/robots.txt", (req, res) => {
   res.sendFile(path.join(__dirname, "robots.txt"));
