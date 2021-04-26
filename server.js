@@ -21,9 +21,7 @@ app.use(express.static(path.join(__dirname, "build"), {
 
 app.all('*', ensureSecure);
 
-app.get("/robots.txt", (req, res) => {
-  res.sendFile(path.join(__dirname, "robots.txt"));
-});
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });

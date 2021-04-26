@@ -7,7 +7,7 @@ import { clientsClaim } from "workbox-core";
 import { ExpirationPlugin } from "workbox-expiration";
 import { precacheAndRoute, createHandlerBoundToURL } from "workbox-precaching";
 import { registerRoute } from "workbox-routing";
-import { CacheFirst } from "workbox-strategies";
+import { CacheFirst, StaleWhileRevalidate } from "workbox-strategies";
 
 clientsClaim();
 
@@ -41,14 +41,27 @@ registerRoute(
 );
 
 const imagesCacheName = "images";
+const imageRegex = /\.(?:png|gif|jpg|svg)$/;
 // An example runtime caching route for requests that aren't handled by the
 // precache, in this case same-origin .png requests like those from in public/
 registerRoute(
   ({ url }) =>
-    url.origin === self.location.origin && /\.jpg|\.png/.test(url.pathname),
+    url.origin === self.location.origin && imageRegex.test(url.pathname),
   new CacheFist({
     cacheName: imagesCacheName,
-  })
+  }),
+);
+
+const externalResourcesCacheName = "external";
+registerRoute(
+  "https://fonts.googleapis.com/(.*)",
+  new CacheFirst({ cacheName: externalResourcesCacheName }),
+);
+
+const staticResourcesCacheName = "static";
+registerRoute(
+  "/.(?:js|css)$/",
+  new StaleWhileRevalidate({ cacheName: staticResourcesCacheName }),
 );
 
 // This allows the web app to trigger skipWaiting via
