@@ -36,10 +36,10 @@ const Music = ({ binMode }) => {
             <Slideshow images={MUSIC_IMAGE_GALLERY} />
           </div>
         </div>
-        <div className="music-carousel">
-          <Carousel title="videos" height="40" items={MUSIC_CAROUSEL_ITEMS} />
-        </div>
       </div>
+      {/* <div className="music-carousel height-90 hidden-section">
+          <Carousel title="videos" height="50" items={MUSIC_CAROUSEL_ITEMS} />
+      </div> */}
     </BaseScreen>
   );
 };

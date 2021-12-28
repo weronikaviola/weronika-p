@@ -1,20 +1,5 @@
 .music-screen {
   background: transparent;
-  .music-description__container {
-    height: 50vh;
-    overflow: auto;
-    .music-description {
-      background: transparent;
-      width: 60vw;
-      padding: 50px;
-    }
-    .slideshow-container {
-      padding: 50px;
-      padding-left: 0;
-      width: 40vw;
-      position: relative;
-    }
-  }
   .music-parallax {
     background-image: url("/images/violin-main_web.jpg");
     height: 100%;
@@ -26,6 +11,22 @@
     justify-content: center;
     align-items: flex-end;
     transition: 1s filter ease-in-out;
+  }
+  .music-description__container {
+    overflow: auto;
+    .music-description {
+      height: 100%;
+      font-family: "Raleway", sans-serif;
+      background: transparent;
+      width: 60vw;
+      padding: 50px;
+    }
+  }
+  .slideshow-container {
+    padding: 50px;
+    padding-left: 0;
+    width: 40vw;
+    position: relative;
   }
 }
 

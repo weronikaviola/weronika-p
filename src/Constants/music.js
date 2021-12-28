@@ -7,8 +7,9 @@ export const MUSIC_DESCRIPTION =
   International Contemporary Music Festival in Krakow, Wschod Piekna Jazz Festival, \
   and I was featured in Tydzien Talentow Festival in Tarnow, Poland. \
   I worked as a musician and arranger for Polish National TV where I contributed to development \
-  of the music section: Hip-hop Meets Classical. As a member of the jazz-fusion group The Rook Duo I performed \
-  in the USA, Australia, Canada, Mexico, and Europe.";
+  of the music section: \"Hip-hop Meets Classical\". As a member of the jazz-fusion group The Rook Duo I performed \
+  in the USA, Australia, Canada, Mexico, and Europe. \
+  Currently, I live and perform in Los Angeles.";
 
 export const MUSIC_CAROUSEL_ITEMS = [
   {
