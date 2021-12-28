@@ -4,14 +4,13 @@ import TextField from "../../components/TextField/TextField";
 
 const Main = ({binMode}) => (
   <BaseScreen
-    classNames="main-screen"
-  >
-    <div className="main code text-shadow__classic-black">
+    className="main-screen">
+    <div className={`main code text-shadow__classic-black ${binMode ? 'binMode' : ''}`}>
       <div className="title">
-        <TextField value="Weronika Miller" binMode={binMode}/>
+        <TextField value="Veronica (Weronika) Miller" binMode={binMode}/>
       </div>
       <div className="subtitle">
-        <TextField value="software engineer" binMode={binMode}/>
+        <TextField value="software engineer / musician" binMode={binMode}/>
       </div>
       <div className="social_media">
         <a href="https://www.linkedin.com/in/weronikamiller/" target="__blank" aria-label="linkedin">

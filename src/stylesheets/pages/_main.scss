@@ -4,6 +4,10 @@
   .main {
     color: $white;
     padding: 10%;
+
+    &.binMode {
+      padding: 5%;
+    }
   }
 }
 
