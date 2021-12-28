@@ -12,7 +12,7 @@ const Slideshow = ({ images }) => {
     const interval = setInterval(() => {
       setBlur(true);
       setTimeout(() => {
-        setCurrentImage(calculateNextImage());
+        setNextImage();
         setTimeout(() => {
           setBlur(false);
         }, 500);
@@ -24,6 +24,8 @@ const Slideshow = ({ images }) => {
     };
   });
 
+  const setNextImage = () => setCurrentImage(calculateNextImage());
+
   const displayImage = () => {
     if (images) {
       const image = images[currentImage];
@@ -31,6 +33,7 @@ const Slideshow = ({ images }) => {
         <img
           src={image.path}
           alt={image.alt}
+          onClick={setNextImage}
           className={`slideshow__image standard-shadow ${blur && "blur"}`}
         />
       );
