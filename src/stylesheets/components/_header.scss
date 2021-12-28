@@ -15,8 +15,9 @@
 .nav-menu {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   padding-top: 20px;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   color: $white;
   height: 100%;
   z-index: 10;
@@ -29,7 +30,7 @@
     font-size: $font-size-nav;
     cursor: pointer;
     color: $white;
-    font-family: 'Fira Code', monospace;
+    font-family: "Fira Code", monospace;
     .alt-name {
       display: none;
     }
@@ -38,7 +39,8 @@
 
 @media only screen and (min-width: 813px) {
   .menu-item {
-    &:hover, &.bin-mode {
+    &:hover,
+    &.bin-mode {
       transition: font-size 1s;
       font-size: $font-size-base;
       background: transparent;
