@@ -16,12 +16,23 @@
       }
       .skill-item {
         background: rgba(200, 200, 200, 0.8);
-        background: linear-gradient(90deg, rgba(233,206,180,0.8) 0%, rgba(239,222,205,0.8) 25%, rgba(172,145,118,0.8) 100%);
+        background: linear-gradient(
+          90deg,
+          rgba(233, 206, 180, 0.8) 0%,
+          rgba(239, 222, 205, 0.8) 25%,
+          rgba(172, 145, 118, 0.8) 100%
+        );
         padding: 10px;
         border-radius: 5px;
+        user-select: none;
         &:hover {
           background: rgba(200, 200, 200, 1);
-          background: linear-gradient(90deg, rgba(233,206,180,1) 0%, rgba(239,222,205,1) 79%, rgba(172,145,118,1) 100%);
+          background: linear-gradient(
+            90deg,
+            rgba(233, 206, 180, 1) 0%,
+            rgba(239, 222, 205, 1) 79%,
+            rgba(172, 145, 118, 1) 100%
+          );
         }
       }
     }

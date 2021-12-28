@@ -4,11 +4,11 @@ export const ADA_LOVELACE_QUOTE = [
 ];
 
 export const DESCRIPTION = [
-  "Hi! I’m Weronika.",
+  "Hi! I’m Veronica.",
   "I am a software engineer, classical musician, and world traveller. I coded my first website when I was 12 years old. For most of my life I worked as a violinist, performing in 38 countries - in TV stations, on cruise ships, in the biggest concert halls, and on the streets of Europe.",
   "There is one thing that always fascinated me the most about music. It is also the thing that music and software engineering have in common - Algorithms.",
-  "Whether it’s a Bach’s Wohltemperierte Klavier or a beautifully written piece of software, I always enjoy finding logic and perfect harmony. Do you know that you could easily recover the algorithms that Bach used to write his pieces?",
-  "I enjoy creating things. I love frontend and backend work equally. As an artist I enjoy developing beautiful and intuitive, yet creative, components. As an engineer I love the logic that makes all those great things happen! ",
+  "Whether it’s a Bach’s Wohltemperierte Klavier or a beautifully written piece of software, I always enjoy finding logic and perfect harmony.",
+  "I enjoy creating things. I love frontend and backend work equally. As an artist I enjoy developing beautiful and intuitive, yet creative, components. As an engineer I love the logic that makes all those things happen! ",
 ];
 
 export const LOREM_IPSUM = [
@@ -145,4 +145,7 @@ export const SKILLS = [
     name: "git",
     logo: "devicon-git-plain colored",
   },
+  {
+    name: "and many more...",
+  }
 ];
