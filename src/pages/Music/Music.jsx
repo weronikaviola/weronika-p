@@ -2,11 +2,9 @@ import React from "react";
 import FontAwesome from "react-fontawesome";
 import {
   MUSIC_DESCRIPTION,
-  MUSIC_CAROUSEL_ITEMS,
   MUSIC_IMAGE_GALLERY,
 } from "../../Constants";
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
-import Carousel from "../../components/Carousel/Carousel";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import TextField from "../../components/TextField/TextField";
 

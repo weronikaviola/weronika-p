@@ -54,17 +54,22 @@ const NotFound = ({ binMode }) => {
           <TextField value="click me" binMode={binMode} />
         </button>
       </div>
-      {showCats && crazyContent()}
+      {crazyContent(showCats)}
     </BaseScreen>
   );
 
-  const crazyContent = () => (
-    <div className="crazy-cats">
-      <div className="cat crazy-cat-1" />
-      <div className="cat crazy-cat-2" />
-      <div className="cat crazy-cat-3" />
-    </div>
-  );
+  const crazyContent = (shouldShowCats) => {
+
+    if (shouldShowCats) {
+      return (
+        <div className="crazy-cats">
+        <div className="cat crazy-cat-1" />
+        <div className="cat crazy-cat-2" />
+        <div className="cat crazy-cat-3" />
+      </div>
+      );
+    }
+  };
 
   return <Status code={404}>{classicContent()}</Status>;
 };
