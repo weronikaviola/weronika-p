@@ -1,5 +1,6 @@
 /* eslint-disable no-multi-str */
-export const MUSIC_DESCRIPTION = "I'm a violist, violinist, and composer. \
+export const MUSIC_DESCRIPTION =
+  "I'm a violist, violinist, and composer. \
   As a member of various classical orchestras and ensembles I performed around the globe, \
   including famous venues like Usher Hall in Edinburgh, Musikverein Golden Hall in Vienna, Keimyung University in South Korea, \
   and many more. I performed during the Warsaw Autumn contemporary music festival, \

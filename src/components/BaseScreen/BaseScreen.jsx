@@ -1,14 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const BaseScreen = ({
-  children,
-  classNames,
-  height,
-  id,
-  onScroll,
-  style,
-}) => (
+const BaseScreen = ({ children, classNames, height, id, onScroll, style }) => (
   <div
     className={`base-screen ${classNames} height-${height}`}
     id={id}
@@ -20,9 +13,10 @@ const BaseScreen = ({
 );
 
 BaseScreen.propTypes = {
-  children: PropTypes.oneOfType(
-    [PropTypes.arrayOf(PropTypes.element), PropTypes.element],
-  ).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element,
+  ]).isRequired,
   classNames: PropTypes.string,
   height: PropTypes.string,
   id: PropTypes.string,

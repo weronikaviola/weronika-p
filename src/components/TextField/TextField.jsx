@@ -2,14 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { translateToBin } from "../../utilities/utils";
 
-const TextField = ({
-  value,
-  binMode,
-}) => {
+const TextField = ({ value, binMode }) => {
   const binValue = translateToBin(value);
-  return (
-  <span>{binMode ? binValue : value}</span>
-  )
+  return <span>{binMode ? binValue : value}</span>;
 };
 
 TextField.propTypes = {
@@ -19,6 +14,6 @@ TextField.propTypes = {
 
 TextField.defaultProps = {
   value: "",
-}
+};
 
 export default TextField;

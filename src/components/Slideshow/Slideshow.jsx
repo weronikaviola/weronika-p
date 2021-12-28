@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-const Slideshow = ({
-  images,
-}) => {
+const Slideshow = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [blur, setBlur] = useState(false);
   const calculateNextImage = () => {
@@ -30,24 +28,26 @@ const Slideshow = ({
     if (images) {
       const image = images[currentImage];
       return (
-        <img src={image.path} alt={image.alt} className={`slideshow__image standard-shadow ${blur && "blur"}`} />
+        <img
+          src={image.path}
+          alt={image.alt}
+          className={`slideshow__image standard-shadow ${blur && "blur"}`}
+        />
       );
     }
     return false;
   };
 
-  return (
-    <div className="slideshow">
-      {displayImage()}
-    </div>
-  );
+  return <div className="slideshow">{displayImage()}</div>;
 };
 
 Slideshow.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.shape({
-    path: PropTypes.string,
-    alt: PropTypes.string,
-  })).isRequired,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      path: PropTypes.string,
+      alt: PropTypes.string,
+    })
+  ).isRequired,
 };
 
 export default Slideshow;

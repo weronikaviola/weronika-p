@@ -10,7 +10,7 @@ import Carousel from "../../components/Carousel/Carousel";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import TextField from "../../components/TextField/TextField";
 
-const Music = ({binMode}) => {
+const Music = ({ binMode }) => {
   const moveDown = () => {
     document.getElementById("screen-2").scrollIntoView({ behavior: "smooth" });
   };
@@ -37,11 +37,7 @@ const Music = ({binMode}) => {
           </div>
         </div>
         <div className="music-carousel">
-          <Carousel
-            title="videos"
-            height="40"
-            items={MUSIC_CAROUSEL_ITEMS}
-          />
+          <Carousel title="videos" height="40" items={MUSIC_CAROUSEL_ITEMS} />
         </div>
       </div>
     </BaseScreen>

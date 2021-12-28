@@ -3,9 +3,7 @@ import React from "react";
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import Json from "../../components/Json/Json";
 
-import {
-  PROJECTS,
-} from "../../Constants";
+import { PROJECTS } from "../../Constants";
 
 const Projects = () => (
   <>

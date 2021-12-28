@@ -13,7 +13,8 @@ export const PROJECTS = [
     id: 2,
     name: "npm create-redux-component",
     title: "author",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1280px-Npm-logo.svg.png",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1280px-Npm-logo.svg.png",
     url: "https://www.npmjs.com/package/create-redux-component",
     importance: 5,
   },

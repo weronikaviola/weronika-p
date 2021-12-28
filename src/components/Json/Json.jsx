@@ -3,14 +3,15 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
-const Json = ({
-  elements,
-  includeGithubLink,
-}) => {
+const Json = ({ elements, includeGithubLink }) => {
   const optionalIcon = () => {
     if (includeGithubLink) {
       return (
-        <a href="https://github.com/weronikaviola/" target="__blank" tabIndex="-1">
+        <a
+          href="https://github.com/weronikaviola/"
+          target="__blank"
+          tabIndex="-1"
+        >
           <button
             className="btn btn--repo standard-shadow"
             type="button"
@@ -28,9 +29,7 @@ const Json = ({
     <div className="json-wrapper standard-shadow">
       {optionalIcon()}
       <div className="json code">
-        <div className="json__row">
-          {"{"}
-        </div>
+        <div className="json__row">{"{"}</div>
         {elements.map((element, idx) => (
           <Fragment key={element.name}>
             <div className="json__row spacer-left-4" key={element.id}>
@@ -48,21 +47,21 @@ const Json = ({
             </div>
           </Fragment>
         ))}
-        <div className="json__row">
-          {"}"}
-        </div>
+        <div className="json__row">{"}"}</div>
       </div>
     </div>
   );
 };
 
 Json.propTypes = {
-  elements: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-  })).isRequired,
+  elements: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   includeGithubLink: PropTypes.bool,
 };
 

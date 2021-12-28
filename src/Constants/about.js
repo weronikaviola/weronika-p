@@ -1,4 +1,7 @@
-export const ADA_LOVELACE_QUOTE = ["Understand well as I may, my comprehension can only be an infinitesimal fraction of all I want to understand.", "Ada Lovelace"];
+export const ADA_LOVELACE_QUOTE = [
+  "Understand well as I may, my comprehension can only be an infinitesimal fraction of all I want to understand.",
+  "Ada Lovelace",
+];
 
 export const DESCRIPTION = [
   "Hi! I’m Weronika.",
@@ -30,7 +33,8 @@ export const EXPERIENCE_TECH = [
   {
     name: "Silversheet",
     position: "software engineer",
-    description: "Silversheet is a company that is revolutionizing the healthcare industry by designing a completely new way of handling medical credentialing. This very small startup was a great place to learn and develop new skills. Every engineer provided solutions for database designs, backend, frontend, and customer support, while working in an agile environment. As a member of the team that built the enterprise version of the software, I was responsible for creating new features as well as refactoring old code to accommodate enterprise functionality.",
+    description:
+      "Silversheet is a company that is revolutionizing the healthcare industry by designing a completely new way of handling medical credentialing. This very small startup was a great place to learn and develop new skills. Every engineer provided solutions for database designs, backend, frontend, and customer support, while working in an agile environment. As a member of the team that built the enterprise version of the software, I was responsible for creating new features as well as refactoring old code to accommodate enterprise functionality.",
     bullets: [
       "Developed Enterprise software by scaling up the existing platform as well as designing entirely new features to satisfy the needs of large organizations",
       "Architected and built key features, like integration with the Certifacts platform, scripts for client data migration, automated reappointment service",
@@ -48,7 +52,8 @@ export const EXPERIENCE_TECH = [
   {
     name: "npm create-redux-component",
     position: "author",
-    description: "npm package for creating React components connected to Redux store",
+    description:
+      "npm package for creating React components connected to Redux store",
     bullets: [
       "Developed this package in order to speed up the process of creating new React components and their Redux store",
       "Used nodeJS and commander to made this feature available in form of a script",
@@ -64,7 +69,8 @@ export const EXPERIENCE_TECH = [
   {
     name: "www.weronikamiller.dev",
     position: "webmaster",
-    description: "This page was created in React. Visit the github repo to learn more.",
+    description:
+      "This page was created in React. Visit the github repo to learn more.",
     link: {
       name: "github repo",
       address: "https://github.com/weronikaviola/weronika-p",
@@ -97,7 +103,7 @@ export const SKILLS = [
   },
   {
     name: "TypeScript",
-    logo: "devicon-typescript-plain colored"
+    logo: "devicon-typescript-plain colored",
   },
   {
     name: "NodeJS",

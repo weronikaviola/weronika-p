@@ -13,18 +13,21 @@ const ExperienceItem = ({
   position,
   startDate,
 }) => {
-  const {
-    address,
-    name: linkName,
-  } = link;
+  const { address, name: linkName } = link;
   return (
-    <div className="paragraph padder-bottom-1 spacer-1 experience-item" key={name}>
+    <div
+      className="paragraph padder-bottom-1 spacer-1 experience-item"
+      key={name}
+    >
       <div className="experience-item__header bcg-semi-black standard-shadow padder-1">
         <div tabIndex="0">
           <TextField value={`${name} - ${position}`} binMode={binMode} />
         </div>
         <div>
-          <TextField value={startDate && `${startDate} - ${endDate}`} binMode={binMode} />
+          <TextField
+            value={startDate && `${startDate} - ${endDate}`}
+            binMode={binMode}
+          />
         </div>
       </div>
       <div className="align-right">

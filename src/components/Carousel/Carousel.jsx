@@ -5,16 +5,13 @@ import FontAwesome from "react-fontawesome";
 
 const ENTER_KEY_CODE = 13;
 
-const Carousel = ({
-  items,
-  height,
-}) => {
+const Carousel = ({ items, height }) => {
   const mountedRef = useRef(true);
   const [active, setActive] = useState(1);
   useEffect(() => {
     return () => {
       mountedRef.current = false;
-    }
+    };
   }, []);
 
   const itemsLength = items.length;
@@ -65,11 +62,17 @@ const Carousel = ({
               key={item.link.slice(item.link.length - 10)}
               aria-label={`video-link-${idx}`}
               onKeyDown={(e) => {
-                if (e.keyCode === 39 && (active === idx - 1 || active === idx - 2)) {
+                if (
+                  e.keyCode === 39 &&
+                  (active === idx - 1 || active === idx - 2)
+                ) {
                   moveRight();
                 }
-                if (e.keyCode === 37 && (active === idx + 1 || active === idx + 2)) {
-                  moveLeft()
+                if (
+                  e.keyCode === 37 &&
+                  (active === idx + 1 || active === idx + 2)
+                ) {
+                  moveLeft();
                 }
               }}
             >
@@ -79,7 +82,11 @@ const Carousel = ({
                 }}
                 className="flex flex-center"
               >
-                <FontAwesome name="play-circle" size="3x" className="text-shadow__discrete" />
+                <FontAwesome
+                  name="play-circle"
+                  size="3x"
+                  className="text-shadow__discrete"
+                />
               </div>
             </a>
           ))}

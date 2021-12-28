@@ -2,11 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import TextField from "./TextField/TextField";
 
-const Quote = ({
-  text,
-  author,
-  binMode,
-}) => (
+const Quote = ({ text, author, binMode }) => (
   <div className="spacer-10">
     <div className="quote spacer-1">
       <TextField value={text} binMode={binMode} />

@@ -4,10 +4,7 @@ import { Route } from "react-router-dom";
 import BaseScreen from "../components/BaseScreen/BaseScreen";
 import TextField from "../components/TextField/TextField";
 
-const Status = ({
-  code,
-  children,
-}) => (
+const Status = ({ code, children }) => (
   <Route
     render={({ staticContext }) => {
       if (staticContext) staticContext.status = code;
@@ -26,26 +23,33 @@ Status.defaultProps = {
   children: undefined,
 };
 
-const NotFound = ({binMode}) => {
-  const [additionalClasses, setAdditionalClasses] = useState('');
+const NotFound = ({ binMode }) => {
+  const [additionalClasses, setAdditionalClasses] = useState("");
   const [showCats, setShowCats] = useState(false);
   useEffect(() => {
     setTimeout(() => {
-      setAdditionalClasses('add-transition');
+      setAdditionalClasses("add-transition");
       setTimeout(() => {
-        setAdditionalClasses('add-tranition rotate');
+        setAdditionalClasses("add-tranition rotate");
       }, 15000);
     }, 1000);
   }, []);
 
   const classicContent = () => (
     <BaseScreen classNames={`error-screen ${additionalClasses}`}>
-      <div className="not-found" onClick={() => {setAdditionalClasses('')}}>
-        <TextField value="404" binMode={binMode} /><br/>
-        <TextField value="page not found..." binMode={binMode} /><br/>
+      <div
+        className="not-found"
+        onClick={() => {
+          setAdditionalClasses("");
+        }}
+      >
+        <TextField value="404" binMode={binMode} />
+        <br />
+        <TextField value="page not found..." binMode={binMode} />
+        <br />
         <button
           className="btn btn--repo"
-          onClick={() => setShowCats(!showCats) }
+          onClick={() => setShowCats(!showCats)}
         >
           <TextField value="click me" binMode={binMode} />
         </button>
@@ -62,11 +66,7 @@ const NotFound = ({binMode}) => {
     </div>
   );
 
-  return (
-    <Status code={404}>
-      {classicContent()}
-    </Status>
-  )
+  return <Status code={404}>{classicContent()}</Status>;
 };
 
 export default NotFound;
