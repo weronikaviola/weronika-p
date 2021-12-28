@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 
 const BaseScreen = ({
   children,
-  className,
+  classNames,
   height,
   id,
   onScroll,
   style,
 }) => (
   <div
-    className={`base-screen ${className} height-${height}`}
+    className={`base-screen ${classNames} height-${height}`}
     id={id}
     style={style}
     onScroll={onScroll}
