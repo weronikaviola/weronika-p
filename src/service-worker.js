@@ -4,7 +4,6 @@
 // See https://developers.google.com/web/tools/workbox/modules
 
 import { clientsClaim } from "workbox-core";
-import { ExpirationPlugin } from "workbox-expiration";
 import { precacheAndRoute, createHandlerBoundToURL } from "workbox-precaching";
 import { registerRoute } from "workbox-routing";
 import { CacheFirst, StaleWhileRevalidate } from "workbox-strategies";
@@ -52,7 +51,7 @@ registerRoute(
 const externalResourcesCacheName = "external";
 registerRoute(
   "https://fonts.googleapis.com/(.*)",
-  new CacheFirst({ cacheName: externalResourcesCacheName }),
+  new CacheFirst({ cacheName: externalResourcesCacheName })
 );
 
 const staticResourcesCacheName = "static";

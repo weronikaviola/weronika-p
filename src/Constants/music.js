@@ -17,14 +17,14 @@ export const DISCOGRAPHY = [
       "Krzysztof Penderecki - Concertos for Wind Instruments and Orchestra (as a member of the Polish Sinfonia Iuventus Orchestra) conducted by Penderecki.",
     link: "http://en.dux.pl/krzysztof-penderecki-concertos-for-wind-instruments-and-orchestra.html",
     image:
-      "http://en.dux.pl/krzysztof-penderecki-concertos-for-wind-instruments-and-orchestra.jpg",
+      "/images/penderecki-winds.jpg",
   },
   {
     description:
       "Krzysztof Penderecki - Concertos For String Instruments and Orchestra (as a member of the Polish Sinfonia Iuventus Orchestra) conducted by Penderecki.",
     link: "http://en.dux.pl/krzysztof-penderecki-concertos-for-string-instruments-and-orchestra.html",
     image:
-      "http://en.dux.pl/krzysztof-penderecki-concertos-for-string-instruments-and-orchestra.jpg",
+      "/images/penderecki-strings.jpg",
   },
 ];
 
