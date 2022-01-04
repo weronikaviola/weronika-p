@@ -1,15 +1,32 @@
 /* eslint-disable no-multi-str */
 export const MUSIC_DESCRIPTION =
-  "I'm a violist, violinist, and composer. \
+  'I\'m a violist, violinist, and composer. \
   As a member of various classical orchestras and ensembles I performed around the globe, \
   including famous venues like Usher Hall in Edinburgh, Musikverein Golden Hall in Vienna, Keimyung University in South Korea, \
   and many more. I performed during the Warsaw Autumn contemporary music festival, \
   International Contemporary Music Festival in Krakow, Wschod Piekna Jazz Festival, \
   and I was featured in Tydzien Talentow Festival in Tarnow, Poland. \
   I worked as a musician and arranger for Polish National TV where I contributed to development \
-  of the music section: \"Hip-hop Meets Classical\". As a member of the jazz-fusion group The Rook Duo I performed \
+  of the music section: "Hip-hop Meets Classical". As a member of the jazz-fusion group The Rook Duo I performed \
   in the USA, Australia, Canada, Mexico, and Europe. \
-  Currently, I live and perform in Los Angeles.";
+  Currently, I live and perform in Los Angeles.';
+
+export const DISCOGRAPHY = [
+  {
+    description:
+      "Krzysztof Penderecki - Concertos for Wind Instruments and Orchestra (as a member of the Polish Sinfonia Iuventus Orchestra) conducted by Penderecki.",
+    link: "http://en.dux.pl/krzysztof-penderecki-concertos-for-wind-instruments-and-orchestra.html",
+    image:
+      "http://en.dux.pl/krzysztof-penderecki-concertos-for-wind-instruments-and-orchestra.jpg",
+  },
+  {
+    description:
+      "Krzysztof Penderecki - Concertos For String Instruments and Orchestra (as a member of the Polish Sinfonia Iuventus Orchestra) conducted by Penderecki.",
+    link: "http://en.dux.pl/krzysztof-penderecki-concertos-for-string-instruments-and-orchestra.html",
+    image:
+      "http://en.dux.pl/krzysztof-penderecki-concertos-for-string-instruments-and-orchestra.jpg",
+  },
+];
 
 export const MUSIC_CAROUSEL_ITEMS = [
   {

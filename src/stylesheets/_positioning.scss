@@ -27,6 +27,9 @@
   &.space-between {
     justify-content: space-between;
   }
+  &.space-evenly {
+    justify-content: space-evenly;
+  }
 }
 .flex-column {
   flex-direction: column;
@@ -51,7 +54,7 @@
     margin: #{$base-padder * $i};
   }
   .spacer-left-#{$i} {
-    margin-left:  #{$base-padder * $i};
+    margin-left: #{$base-padder * $i};
   }
   .spacer-right-#{$i} {
     margin-right: #{$base-padder * $i};
@@ -71,7 +74,7 @@
 }
 @for $i from 1 through 10 {
   .indent-#{$i} {
-    margin-left: #{$base-padder * ($i+4)};
-    text-indent: #{-($base-padder * ($i - 4))};
+    margin-left: #{$base-padder * ($i + 4)};
+    text-indent: #{- ($base-padder * ($i - 4))};
   }
 }

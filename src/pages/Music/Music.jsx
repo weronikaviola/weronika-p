@@ -1,12 +1,14 @@
 import React from "react";
 import FontAwesome from "react-fontawesome";
 import {
+  DISCOGRAPHY,
   MUSIC_DESCRIPTION,
   MUSIC_IMAGE_GALLERY,
 } from "../../Constants";
 import BaseScreen from "../../components/BaseScreen/BaseScreen";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import TextField from "../../components/TextField/TextField";
+import CdMiniature from "../../components/CdMiniature";
 
 const Music = ({ binMode }) => {
   const moveDown = () => {
@@ -29,6 +31,17 @@ const Music = ({ binMode }) => {
         <div className="flex music-description__container">
           <div className="music-description text justify text-shadow__classic-black">
             <TextField value={MUSIC_DESCRIPTION} binMode={binMode} />
+            <div className="flex space-evenly spacer-top-5">
+              <TextField value="Discography:" binMode={binMode} />
+              {DISCOGRAPHY.map((record) => (
+                <CdMiniature
+                  key={record.image}
+                  imageLink={record.image}
+                  description={record.description}
+                  publisherLink={record.link}
+                />
+              ))}
+            </div>
           </div>
           <div className="slideshow-container">
             <Slideshow images={MUSIC_IMAGE_GALLERY} />
